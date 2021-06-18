@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANISH MALHOTRA HI-SHINE LIPSTICK</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        font-family: Arial;
+        height: 1350px;
+        text-align: center;
+    }
+    .main h1{
+        font-size: 13px;
+    }
+    .main{
+        margin: auto;
+        width: 80%;
+        height: 80%;
+        /* border: 1px solid black; */
+    }
+    .chatBox{
+        position: fixed;
+        width: 5%;
+        height: 10%;
+        /* background-color: red; */
+        z-index: 5;
+        left: 93%;
+        top: 87%;
+    }
+    .chatBox>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 10px 10px 10px grey, -10px -10px 10px grey;
+    }
+    .bottom{
+        position: fixed;
+        width: 100%;
+        height: 15%;
+        background-color: white;
+        border: 1px solid black;
+        top: 85%;
+        z-index: 4;
+    }
+    .bottom_img>img{
+        position: fixed;
+        width: 7%;
+        height: 85px;
+        top: 86%;
+        left: 8%;
+        z-index: 4;
+    }
+    a{
+        font-weight: 50;
+        text-decoration: none;
+    }
+    .a_margin{
+        margin-top: 40px;
+    }
+    .a_content{
+        margin-left: 45%;
+        text-align: left;
+        font-size: 15px;
+    }
+    .addToBag{
+        /* margin-top: -5px; */
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        width: 30%;
+        height: 45px;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    .addToBag1{
+        /* margin-top: -5px; */
+        background-color: black;
+        color: white;
+        margin-left: 55%;
+        margin-top: -3%;
+        text-align: center;
+        border-radius: 10px;
+        width: 10%;
+        height: 30px;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    .desc>p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .desc>h1{
+        font-size: 20px;
+    }
+    .a_img>img{
+        position: fixed;
+        width: 35%;
+        height: 500px;
+        top: 6%;
+        left: 8%;
+    }
+
+    /* footer */
+    footer {
+      position: relative;
+      background-color: white;
+      padding: 3rem 0px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      z-index: 3;
+    }
+    #footer {
+      display: flex;
+      padding: 0px 12vw;
+      text-transform: uppercase;
+      font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+        sans-serif;
+        z-index: 1;
+    }
+    #footer > ul {
+      padding: 0px 30px 0px 0px;
+      list-style-type: none;
+      color: #818181;
+    }
+    #footer h6 {
+      font-size: 1rem;
+    }
+    #footer > ul > li a {
+      text-decoration: none;
+      color: black;
+      text-transform: none;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 0.87rem;
+    }
+    #footer li {
+      margin-top: 0.37rem;
+      line-height: 1.2;
+    }
+    #footerBottom {
+      display: flex;
+      padding: 0px 12vw;
+      margin-top: 2.3rem;
+      position: relative;
+    }
+    footer button {
+      height: 2.3rem;
+      color: white;
+      background-color: black;
+      border: none;
+      font-size: 0.9rem;
+      margin-left: 0px;
+      width: 10rem;
+      vertical-align: middle;
+    }
+    footer input {
+      height: 2.3rem;
+      width: 19rem;
+      margin-top: 1rem;
+    }
+    /* #sect2 label {
+        position: absolute;
+        right: 12vw;
+      } */
+    #sect2 img {
+      width: 7.5rem;
+      height: 2.5rem;
+      margin-top: 1rem;
+    }
+    #sect2 {
+      position: absolute;
+      right: 12vw;
+    }
+    #img1 {
+        float: left;
+      /* position: absolute; */
+      /* right: -80%; */
+    }
+    #img2 {
+      position: absolute;
+      right: 2px;
+    }
+    #footer > ul > li a:hover {
+      color: #d4a255;
+    }
+</style>
+<body>
+    <div class="main ">
+
+        <h1><a onclick="home()" style="cursor: pointer; color: rgb(245, 97, 121);">HOME</a> / <a>MANISH MALHOTRA HI-SHINE LIPSTICK</a></h1>
+
+        <div class="a_img">
+            <img src="https://files.myglamm.com/site-images/400x400/vintage-wine-7.jpeg">
+        </div>
+        
+    <hr>
+    <div class="a_content a_margin">
+        <h2 style="color: rgb(32, 30, 30);">MANISH MALHOTRA HI-SHINE LIPSTICK</h2>
+        <p style="color: grey;">Lightweight, Long-wear Lipsticks</p>
+        <p style="font-size: 20px" > 4.4 <i class="fas fa-star" style="color: rgb(241, 114, 135);"></i> |&nbsp 65 ratings</p>
+        <p style="font-size: 30px; ">₹ 950</p>
+        <p style="margin-top: -20px; margin-bottom: 30px;">(MRP incl. of all taxes)</p>
+        <a href="">
+          <div class="addToBag" onclick="addToBag()">
+            <h1 style="font-weight: 700; font-size: 20px;"><i class="fas fa-shopping-bag"></i> &nbsp ADD TO BAG</h1>
+        </div>
+        </a>
+
+        <br>
+        <hr>
+        <div class="desc">
+            <h1 style="font-size: 20px; font-weight: 600;">DESCRIPTION</h1>
+            <br>
+            <p>Banger is a fuchsia shade that will make everyone look at you.</p>
+            <br>
+            <p>The LIT Matte Nail Enamels by MyGlamm promise super long wear time, guaranteeing endless nights of fun with your digits—whether it’s in real time or some good ol’ sexting. Nothing sets the mood quite like the frosty matte finish of polished nails. We’ve used a formula that improves colour payoff, enhances brightness and mattifies in seconds —time to put those nails to good use.</p>
+            <br>
+            <h1>Benefits:</h1>
+            <ul>
+                <li>Sport a fresh manicure with every swipe</li>
+                <li>Flawless texture</li>
+                <li>Ultra long-lasting formula</li>
+                <li>Super solid colour payoff</li>
+                <li>Contoured applicator for easy application</li>
+            </ul>
+            <br>
+            <h1>Enhanced Properties:</h1>
+            <ul>
+                <li>Improved process ensures better performance and deeper colour</li>
+                <li>Mattifies within seconds</li>
+                <li>Cruelty-free, and not tested on animals</li>
+            </ul>
+            <br>
+            <h1>Manufacturer Detail :</h1>
+            <p>VIVA Cosmetics, C1/1 to 6, Radheshyam Indl. Complex, Asangaon, Shahapur, Thane- 421 601 M.L.No.:MKD/C/265.</p>
+            <br>
+        </div>
+    
+        </div>
+    <!-- <hr> -->
+    <br>
+    <div class="chatBox" onclick="chatbox()">
+        <img src="https://cdn.yellowmessenger.com/xEiulUijEbNF1622637959504.png">
+    </div>
+    </div>
+    <div class="bottom">
+        <h2 style="font-size: 20px; text-align: left; margin-left: 20%;margin-top: 2%; color: rgb(61, 60, 60);">MANISH MALHOTRA HI-SHINE LIPSTICK &nbsp (₹ 950)</h2>
+        <a href="">
+          <div class="addToBag1" onclick="addToBag()">
+            <h1 style="font-weight: 700; font-size: 13px; "><i class="fas fa-shopping-bag"></i> &nbsp ADD TO BAG</h1>
+        </div>
+        </a>
+        
+    </div>
+    
+    <div class="bottom_img">
+        <img src="https://files.myglamm.com/site-images/400x400/vintage-wine-7.jpeg" >
+    </div>
+    
+    <footer>
+        <hr>
+        <div id="footer" style="margin-top: -4%;">
+          <ul>
+            <li><h6>Bath &amp; Body</h6></li>
+            <li>
+              <a href="/buy/bath-and-body/body/face-washes">Face Washes</a>
+            </li>
+            <li>
+              <a href="/buy/bath-and-body/body/shower-gels">Shower Gels</a>
+            </li>
+            <li>
+              <a href="/buy/bath-and-body/body/body-moisturizers"
+                >Body Moisurizers</a
+              >
+            </li>
+            <li><a href="/buy/bath-and-body/body/soaps">Soaps</a></li>
+            <li><a href="/buy/bath-and-body/body/hand-care">Hand Care</a></li>
+            <li><a href="/buy/bath-and-body/body/foot-care">Foot Care</a></li>
+            <li>
+              <a href="/buy/makeup/bath-and-body/sanitizing-kits"
+                >Sanitizing Kits</a
+              >
+            </li>
+            <li>
+              <a href="/buy/bath-and-body/body-care/body-spray-and-mists"
+                >Body Spray &amp; Mists</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li><h6>Sanitizing Care</h6></li>
+            <li>
+              <a href="/buy/sanitizing-care/sanitizers/sanitizing-wipes"
+                >Sanitizing Wipes</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/body/face-washes">Face Washes</a>
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/body/shower-gels">Shower Gels</a>
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/body/body-moisturizers"
+                >Body Moisturizers</a
+              >
+            </li>
+            <li><a href="/buy/sanitizing-care/body/soaps">Soaps</a></li>
+            <li><a href="/buy/sanitizing-care/body/hand-care">Hand Care</a></li>
+            <li><a href="/buy/sanitizing-care/body/foot-care">Foot Care</a></li>
+            <li>
+              <a href="/buy/sanitizing-care/sanitizers/surface-spray"
+                >Surface Spray</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/kits/sanitizing-kits"
+                >Sanitizing Kits</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/body-care/body-spray-and-mists"
+                >Body Spray &amp; Mists</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/sanitizers/sanitizing-spray"
+                >Sanitizing Spray</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/sanitizers/hand-sanitizer"
+                >Hand Sanitizer</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li><h6>Skincare</h6></li>
+            <li>
+              <a href="/buy/skincare/cleansers/face-cleanser">Face Cleanser</a>
+            </li>
+            <li><a href="/buy/skincare/cleanser">Cleanser</a></li>
+            <li><a href="/buy/skincare/cleansers/toner">Toner</a></li>
+            <li>
+              <a href="/buy/skincare/moisturiser/moisturising-cream"
+                >Moisturising Cream</a
+              >
+            </li>
+            <li><a href="/buy/skincare/moisturiser">Moisturiser</a></li>
+            <li><a href="/buy/skincare/cleanser/face-wash">Face Wash</a></li>
+            <li>
+              <a href="/buy/skincare/moisturizer/body-lotion">Body Lotion</a>
+            </li>
+            <li><a href="/buy/skincare/mask/sheet-mask">Sheet Mask</a></li>
+            <li>
+              <a href="/buy/skincare/lip-treatment/lip-balms-and-treatments"
+                >Lip Balms &amp; Treatment</a
+              >
+            </li>
+            <li><a href="/buy/skincare/eye-care/eye-cream">Eye Cream</a></li>
+            <li>
+              <a href="/buy/skincare/sun-care/face-sunscreen">Face Sunscreen</a>
+            </li>
+            <li>
+              <a href="/buy/skincare/cleanser/exfoliators-and-scrubs"
+                >Exfoliators &amp; Scrub</a
+              >
+            </li>
+            <li><a href="/buy/skincare/masks/face-masks">Face Masks</a></li>
+            <li>
+              <a href="/buy/skincare/moisturizer/moisturising-gel"
+                >Moisturising Gel</a
+              >
+            </li>
+            <li>
+              <a href="/buy/skincare/moisturiser/night-cream">Night Cream</a>
+            </li>
+            <li><a href="/buy/skincare/treatment/essence">Essence</a></li>
+          </ul>
+          <ul>
+            <li><h6>Face</h6></li>
+            <li><a href="/buy/makeup/face/face-sets">Face Sets</a></li>
+            <li><a href="/buy/makeup/face/fixing-powder">Fixing Powder</a></li>
+            <li><a href="/buy/makeup/face/primer">Primer</a></li>
+            <li><a href="/buy/makeup/face/concealer">Concealer</a></li>
+            <li><a href="/buy/makeup/face/foundation">Foundation</a></li>
+            <li><a href="/buy/makeup/face/compact">Compact</a></li>
+            <li>
+              <a href="/buy/makeup/face/setting-powder">Setting Powder</a>
+            </li>
+            <li><a href="/buy/makeup/face/banana-powder">Banana Powder</a></li>
+            <li><a href="/buy/makeup/face/highlighter">Highlighter</a></li>
+            <li><a href="/buy/makeup/face/blush">Blush</a></li>
+            <li><a href="/buy/makeup/face/bronzer">Bronzer</a></li>
+            <li><a href="/buy/makeup/face/cheek-stain">Cheek Stain</a></li>
+            <li><a href="/buy/makeup/face/face-chalks">Face Chalks</a></li>
+            <li><a href="/buy/makeup/face/sheet-mask">Sheet Masks</a></li>
+          </ul>
+          <ul>
+            <li><h6>Eyes</h6></li>
+            <li><a href="/buy/makeup/eyes/eyeshadow">Eye Shadow</a></li>
+            <li><a href="/buy/makeup/eyes/eyeliner">Eyeliner</a></li>
+            <li><a href="/buy/makeup/eyes/eyebrow">Eyebrows</a></li>
+            <li><a href="/buy/makeup/eyes/glitter">Eye Sparkle</a></li>
+            <li><a href="/buy/makeup/eyes/chalks">Eye Chalks</a></li>
+            <li><a href="/buy/makeup/eyes/mascara">Mascara</a></li>
+            <li><a href="/buy/makeup/eyes/kajal">Kajal</a></li>
+          </ul>
+          <ul>
+            <li><h6>Lips</h6></li>
+            <li><a href="/buy/makeup/lips/lipstick">Lipstick</a></li>
+            <li>
+              <a href="/buy/makeup/lips/matte-lipstick">Matte Lipstick</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/lips/metallic-lipstick">Metallic Lipstick</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/lips/hi-shine-lipstick">Hi-Shine Lipstick</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/lips/liquid-lipstick">Liquid Lipstick</a>
+            </li>
+            <li><a href="/buy/makeup/lips/lip-gloss">Lip Gloss</a></li>
+            <li>
+              <a href="/buy/makeup/lips/hi-shine-lipgloss">Hi-Shine Lipgloss</a>
+            </li>
+            <li><a href="/buy/makeup/lips/lip-liner">Lipliners</a></li>
+            <li><a href="/buy/makeup/lips/lip-balm">Lip Care</a></li>
+            <li><a href="/buy/makeup/lips/glitter">Lip Sparkle</a></li>
+            <li><a href="/buy/makeup/lips/lip-stain">Lip Stain</a></li>
+            <li><a href="/buy/makeup/lips/lip-chalks">Lip Chalks</a></li>
+            <li><a href="/shade-finder">Find Your Lipstick</a></li>
+          </ul>
+          <ul>
+            <li><h6>Nails</h6></li>
+            <li><a href="/buy/makeup/nails/nail-polish">Nail Polish</a></li>
+            <li>
+              <a href="/buy/makeup/nails/matte-nail-polish">Matte Nail Polish</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/nails/matte-nail-enamel">Matte Nail Enamel</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/nails/glossy-nail-enamel"
+                >Glossy Nail Enamel</a
+              >
+            </li>
+            <li><a href="/buy/makeup/nails/nail-lacquer">Nail Lacquer</a></li>
+          </ul>
+          <ul>
+            <li><h6>myglammSTUDIO</h6></li>
+            <li><a href="/glammstudio/style/">Style</a></li>
+            <li><a href="/glammstudio/lifestyle/">Lifestyle</a></li>
+            <li><a href="/glammstudio/trends/">Trends </a></li>
+            <li><a href="/glammstudio/tips/">Tips</a></li>
+            <li><a href="/glammstudio/beauty/">Beauty</a></li>
+            <li><a href="/glammstudio/tutorials/">Tutorials</a></li>
+          </ul>
+          <ul>
+            <li><h6>Know More</h6></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/offers">Exclusive Offers</a></li>
+            <li><a href="/refer">Refer &amp; Earn</a></li>
+            <li><a href="/online-parties/">myglammPARTIES</a></li>
+            <li><a href="/store-locator">Store Locator</a></li>
+            <li><a href="/press">Press &amp; Media</a></li>
+            <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+            <li><a href="/policies">Privacy Policy</a></li>
+            <li>
+              <a href="/shipping-and-delivery-policy"
+                >Shipping and Delivery policy</a
+              >
+            </li>
+            <li>
+              <a href="/returns-and-replacements">Returns and Replacements</a>
+            </li>
+            <li><a href="/about-rewards">MyGlamm Rewards</a></li>
+            <li><a href="/site-map">Sitemap</a></li>
+          </ul>
+        </div>
+        <div id="footerBottom">
+          <div id="sect1">
+            <form action="">
+              <label for="">SUBSCRIBE FOR MYGLAMM EMAILS</label>
+              <br />
+              <input type="text" placeholder="Please enter valid email ID" />
+              <button>SUBSCRIBE NOW</button>
+            </form>
+          </div>
+          <div id="sect2">
+            <label for="">EXPERIENCE THE MYGLAMM MOBILE APP</label>
+            <br />
+            <a href="">
+              <img src="https://www.myglamm.com/images/iosStore.png" alt="" id="img1"/>
+            </a>
+            <a href="">
+              <img
+                src="https://www.myglamm.com/images/playStore.png"
+                alt=""
+                id="img2"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+</body>
+
+<script>
+  let data = `[
+          {
+              "Name": "LIT NAIL ENAMEL",
+              "Price": "190",
+              "Image": "https://files.myglamm.com/site-images/400x400/1623081862539-bad-romance-5.jpeg",
+              "Description": "Chip-resistant, Glossy Nail Enamel"
+          },
+          {
+              "Name": "LIT MATTE NAIL ENAMEL",
+              "Price": "220",
+              "Image": "https://files.myglamm.com/site-images/400x400/14-bye-felicia-2.jpeg",
+              "Description": "Chip-resistant, Matte Nail Enamel"
+          },
+          {
+              "Name": "WANDERLUST SAND MATTE NAIL POLISH 2020",
+              "Price": "249",
+              "Image": "https://files.myglamm.com/site-images/400x400/1623081747548-ANGEL-CAKE-3.jpeg",
+              "Description": "Long-lasting Sand Matte Nail Polish"
+          },
+          {
+              "Name": "MANISH MALHOTRA NAIL LACQUER",
+              "Price": "450",
+              "Image": "https://files.myglamm.com/site-images/400x400/1623081265647-opulent-ocean-6.jpeg",
+              "Description": "Hi-Shine Gel Finish Nail Enamel | Made in Italy"
+          },
+          {
+              "Name": "WANDERLUST CHROME MATTE NAIL POLISH 2020",
+              "Price": "249",
+              "Image": "https://files.myglamm.com/site-images/400x400/ARUBA-copy.jpg",
+              "Description": "Long-lasting Chrome Matte Nail Polish"
+          },
+          {
+              "Name": "MANISH MALHOTRA GEL FINISH NAIL LACQUER",
+              "Price": "450",
+              "Image": "https://files.myglamm.com/site-images/400x400/1623136708385-Summer-Blue-Open.jpeg",
+              "Description": "Hi-Shine Gel Finish Nail Enamel"
+          },
+          {
+              "Name": "WANDERLUST SAND MATTE NAIL POLISH",
+              "Price": "249",
+              "Image": "https://files.myglamm.com/site-images/400x400/1623081734970-BANOFFEE-PIE-1.jpeg",
+              "Description": "Long-lasting Sand Matte Nail Polish"
+          },
+          {
+              "Name": "WANDERLUST CHROME MATTE NAIL POLISH",
+              "Price": "249",
+              "Image": "https://files.myglamm.com/site-images/400x400/ARUBA-copy_1.jpg",
+              "Description": "Long-lasting Chrome Matte Nail Polish"
+          }
+      ]`;
+      
+    let data1 = `[
+          {
+              "Name": "LIT SATIN MATTE LIPSTICK",
+              "Price": "495",
+              "Image": "https://files.myglamm.com/site-images/400x400/1623081490108-modern-family-5.jpeg",
+              "Description": "Hi-Wattage 3D Satin Matte Finish Lipstick With Intense Colour Payoff"
+          },
+          {
+              "Name": "LIT LIQUID MATTE LIPSTICK",
+              "Price": "395",
+              "Image": "https://files.myglamm.com/site-images/400x400/01-FBO1.jpg",
+              "Description": "Moringa Oil Enriched Matte Lipstick"
+          },
+          {
+              "Name": "MANISH MALHOTRA HI-SHINE LIPSTICK",
+              "Price": "950",
+              "Image": "https://files.myglamm.com/site-images/400x400/vintage-wine-7.jpeg",
+              "Description": "Lightweight, Long-wear Lipsticks"
+          },
+          {
+              "Name": "ULTIMATTE LONG-STAY MATTE LIPSTICK",
+              "Price": "699",
+              "Image": "https://files.myglamm.com/site-images/400x400/SHOWGIRL.jpg",
+              "Description": "Hyaluronic Acid-enriched, Moisturising, Matte Slim Lipstick"
+          },
+          {
+              "Name": "LIT CREAMY MATTE LIPSTICK",
+              "Price": "595",
+              "Image": "https://files.myglamm.com/site-images/400x400/1623082287293-tequila-sunrise-1.jpeg",
+              "Description": "Precision Perfect Matte Slimstick"
+          },
+          {
+              "Name": "POSE HD LIPSTICK",
+              "Price": "599",
+              "Image": "https://files.myglamm.com/site-images/400x400/002-true-red-1.jpeg",
+              "Description": "HD Long-wear Matte Lipstick"
+          },
+          {
+              "Name": "K.PLAY FLAVOURED LIPSTICK",
+              "Price": "545",
+              "Image": "https://files.myglamm.com/site-images/400x400/1623083218517-11-pink-guava-smash-1.jpeg",
+              "Description": "Pink Guava Flavoured Vitamin E-enriched Creamy Lipstick"
+          }
+      ]`;
+
+    //nailpolish
+
+    localStorage.setItem("nailPolish", data);
+    let nailPolish = JSON.parse(localStorage.getItem("nailPolish"))
+
+
+    //lipstick
+
+    localStorage.setItem("lipstick", data1);
+    let lipstick = JSON.parse(localStorage.getItem("lipstick"))
+
+// let lipstick = JSON.parse(localStorage.getItem("lipstick"))
+
+let soloData = `[
+        {
+              "Name": "MANISH MALHOTRA HI-SHINE LIPSTICK",
+              "Price": "950",
+              "Image": "https://files.myglamm.com/site-images/400x400/vintage-wine-7.jpeg",
+              "Description": "Lightweight, Long-wear Lipsticks"
+          }
+    ]`;
+    
+    
+    localStorage.setItem("soloD", soloData);
+
+    var soloD = JSON.parse(localStorage.getItem("soloD"));
+    // console.log(soloD);
+
+
+    function addToBag()
+  {
+    var count = 0;
+
+            let arr;
+            arr = localStorage.getItem('myglemmbag')
+
+            if (arr == null) {
+                arr=[]; //this is for first time visitor.
+                arr.push(soloD[0])
+                localStorage.setItem('myglemmbag', JSON.stringify(arr))
+                alert('Added To Cart !!')
+                count++;
+                // break;
+            }
+            if(arr != null) {
+            arr = JSON.parse(arr)  //Array format conversion
+            // console.log(arr);
+            for(let j=0; j<arr.length; j++) {
+                
+                    if(arr[j].Name == soloD[0].Name && arr[j].Price == soloD[0].Price ) {
+                            alert('Already Added')
+                          break;
+                          count++;
+                        }
+                        
+
+                  if(j == arr.length-1 && count == 0)
+                     {
+                      arr.push(soloD[0])
+                      localStorage.setItem('myglemmbag', JSON.stringify(arr))
+                      alert('Added To Cart !!')
+                      count++;
+                      break;
+                     }
+            }
+            
+        }
+
+      // var data24 = JSON.parse(localStorage.getItem('myglemmbag'));
+      //   console.log(data24)
+  }
+
+  function home(){
+    window.location.href = "FinalMergeFile.html";
+  }
+
+</script>
+</html>

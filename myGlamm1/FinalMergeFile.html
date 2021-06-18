@@ -1,0 +1,2807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinalMergedHomePage</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: rgb(244, 244, 244);
+      
+      }
+      /* Header Start*/
+      .th1section {
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+      }
+      .th1outter {
+        width: 100%;
+        height: 7.6vh;
+        background: rgb(255, 207, 215);
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .th1inner1 {
+        width: 40%;
+        height: 7vh;
+        position: absolute;
+        top: 0.3vh;
+        left: 80px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .th1inner1 > a > img {
+        height: 7vh;
+      }
+      .th1inner1 > a > img:hover{
+            height: 7.2vh;
+        }
+      .th1inner2 > a > img {
+        height: 7vh;
+      }
+      .th1inner2 > a > img:hover{
+            height: 7.2vh;
+        }
+      .th1inner1 a {
+        text-decoration: none;
+        min-width: 26%;
+      }
+      .th1inner1 a p {
+        color: black;
+        margin: 2vh;
+        font-size: 100%;
+      }
+      .th1inner1 a h3 {
+        color: rgb(253, 148, 166);
+        margin: 2vh;
+      }
+      .th1inner2 {
+        width: 15%;
+        height: 7vh;
+        position: absolute;
+        top: 0.3vh;
+        right: 80px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .th1inner2 a {
+        text-decoration: none;
+        min-width: 25%;
+      }
+      .th1inner2 a p {
+        color: black;
+        margin: 2vh;
+        font-size: 100%;
+      }
+
+      /* Second Head Section Start*/
+      .th2section {
+        width: 100%;
+        position: fixed;
+        z-index: 4;
+        top: 7.6vh;
+        background: white;
+      }
+      .th2outter {
+        width: 80%;
+        margin: auto;
+      }
+      .th2inner {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+      }
+
+      .th2inner1 {
+        width: 30%;
+        height: 10vh;
+        text-align: right;
+      }
+      .th2inner1 a img {
+        height: 8vh;
+        margin: 1vh;
+      }
+      .th2inner2 {
+        width: 40%;
+      }
+      .th2inner2 span img {
+        height: 4vh;
+        margin: 2vh 0;
+        padding: 1.13vh;
+        background: rgb(244, 244, 244);
+      }
+      .th2inner2 span input {
+        width: 25%;
+        height: 6vh;
+        margin: 2vh 0;
+        position: absolute;
+        border: none;
+        outline: none;
+        background: rgb(244, 244, 244);
+      }
+      .th2inner2 span input:click {
+        border: none;
+      }
+      .reffer {
+        width: 10%;
+        text-align: center;
+        margin: auto;
+      }
+      .reffer a .reffer1 {
+        width: 100%;
+        height: fit-content;
+        margin-top: 1%;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 5vh;
+        color: black;
+      }
+      .reffer a .reffer1:hover {
+        background: black;
+        color: white;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      .th2inner4 {
+        width: 10%;
+      }
+      .th2inner4 a img {
+        height: 4vh;
+        margin: 3vh;
+      }
+      .th2inner4 a img:hover {
+        height: 4.5vh;
+        cursor: pointer;
+      }
+      .th2inner5 {
+        width: 10%;
+      }
+      .th2inner5 a img {
+        width: 4vh;
+        margin: 3vh;
+        cursor: pointer;
+      }
+      .th2inner5 a img:hover {
+        width: 4.5vh;
+      }
+      .th3section {
+        width: 100%;
+        position: fixed;
+        z-index: 4;
+        top: 17.6vh;
+        background: white;
+      }
+      .th3outter {
+        width: 80%;
+        margin: auto;
+      }
+      .th3inner {
+        width: 100%;
+        height: 6vh;
+        display: flex;
+      }
+      .th3inner1 {
+        width: 16.67%;
+        text-align: center;
+      }
+      .th3inner div:hover {
+        cursor: pointer;
+      }
+      .th3inner1 h4 {
+        font-size:80%;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+        margin-top: 1.5vh;
+      }
+      .th31outter{
+            position: fixed;
+            top: 23.6vh;
+            left: 13%;
+            width:80%;
+            margin:auto;
+            display:grid;
+            grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+            background:rgba(255,255,255,0.5);
+            text-align: left;
+        }
+        .th31inner a h1{
+            font-size:90%;
+        }
+        .th31outter{
+          display:none;
+        }
+        .shop:hover .th31outter{
+            display:grid;
+            grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+            background:rgb(255,255,255);
+            padding: 2%;
+            box-shadow: 0 0 1px black;
+    
+        }
+
+        .th31inner a h1:hover{
+            font-size:93%;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .th31inner a p:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .th3inner1 h4:hover{
+           font-size:90%;
+           text-decoration: overline;
+           cursor: pointer;
+        }
+        .threwardo{
+           position:fixed;
+           top:19.5vh;
+           width:24%;
+           text-align:left;
+           padding:2%;
+           margin-left:1.3%;
+        }
+        .threwardi{
+            display: none;
+        }
+        .threwardi a p{
+            color:black;
+        }
+        .threwardi a p:hover{
+            text-decoration:underline;
+        }
+        .rewards:hover .threwardi{
+            display: block;
+            background:rgb(255,255,255);
+            padding: 10%;
+            box-shadow: 0 0 1px black;
+    
+    
+        }
+        .thexperto{
+          position: fixed;
+          top:19.5vh;
+          width:20%;
+           text-align:left;
+           padding:2%;
+           margin-left:2%;
+        }
+        .thexperti{
+            display: none;
+        }
+        .thexperti a p{
+            color:black;
+        }
+        .thexperti a p:hover{
+            text-decoration:underline;
+        }
+        .expert:hover .thexperti{
+            display: block;
+            background:rgb(255,255,255);
+            padding: 10%;
+            box-shadow: 0 0 1px black;
+
+        }
+        .thstudioo{
+          position:fixed;
+          top:19.5vh;
+          width:20%;
+           text-align:left;
+           padding:2%;
+           margin-left: -1.5%;
+        }
+        .thstudioi{
+            display: none;
+        }
+        .thstudioi a p{
+            color:black;
+        }
+        .studio:hover .thstudioi{
+            display: block;
+            background:rgb(255,255,255);
+            padding: 10%;
+            box-shadow: 0 0 1px black;
+        }
+         .thstudioi a p:hover{
+            text-decoration:underline;
+        }
+        .thoffero{
+          position: fixed;
+          top:19.5vh;
+          width:20%;
+           text-align:left;
+           padding:2%;
+           margin-left: 2%;
+        }
+        .thofferi{
+            display: none;
+        }
+        .thofferi a p{
+            color:black;
+        }
+        .offer:hover .thofferi{
+            display: block;
+            background:rgb(255,255,255);
+            padding: 10%;
+            box-shadow: 0 0 1px black;
+    
+        }
+      
+         .thofferi a p:hover{
+            text-decoration:underline;
+        }
+        .studio:hover,.offer:hover,.rewards:hover,.expert:hover,.offer:hover{
+          text-decoration: overline;
+        }
+     
+
+      /* body statrt */
+      /*First  body Section*/
+      .slider {
+        width: 100vw;
+        height: 375px;
+        overflow: hidden;
+        position: relative;
+        top: 23.6vh;
+      }
+      .slides {
+        width: 800%;
+        display: flex;
+        justify-content: center;
+      }
+      .image {
+        width: 12.5%;
+        transition: 1s;
+      }
+      .slides > input {
+        display: none;
+      }
+      .image > img {
+        width: 100%;
+      }
+      .navigation-manual,
+      .navigation-auto {
+        position: absolute;
+        top: 350px;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+      }
+      .manual-btn {
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 7.5px;
+        cursor: pointer;
+        transition: 1s;
+      }
+      .manual-btn:not(:last-child) {
+        margin-right: 2.5%;
+      }
+      .manual-btn:hover {
+        background:rgb(255, 151, 151);
+      }
+      .manual-btn:checked {
+        background: rgb(255, 151, 151);
+      }
+      #radio1:checked ~ .first {
+        margin-left: 0%;
+      }
+      #radio2:checked ~ .first {
+        margin-left: -25%;
+      }
+      #radio3:checked ~ .first {
+        margin-left: -50%;
+      }
+      #radio4:checked ~ .first {
+        margin-left: -75%;
+      }
+      #radio5:checked ~ .first {
+        margin-left: -100%;
+      }
+      #radio6:checked ~ .first {
+        margin-left: -125%;
+      }
+      #radio7:checked ~ .first {
+        margin-left: -150%;
+      }
+      #radio8:checked ~ .first {
+        margin-left: -175%;
+      }
+
+      .navigation-auto div {
+        border: 1px solid grey;
+        padding: 7.5px;
+        border-radius: 10px;
+        transition: 1s;
+      }
+      .navigation-auto div:not(:last-child) {
+        margin-right: 2.5%;
+      }
+      /* Second Body Section Start*/
+      .tbsetion2 {
+        position: relative;
+      }
+      .second {
+        width: 90%;
+        margin: 200px auto;
+        margin-bottom: 80px;
+        height: 100px;
+      }
+      .second img {
+        width: 100%;
+        height: 100%;
+      }
+
+      /*Third Body Section*/
+      .thirdsection h3,
+      .thead4 > h3,
+      .t5h3 > h3,
+      .t6head > h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: auto auto 1.5rem;
+        padding: 0 5px;
+        background: linear-gradient(transparent 60%, rgb(255, 151, 151) 30px);
+        font-size: 24px;
+        width: max-content;
+      }
+      .categoryname {
+        font-weight: 600;
+        text-align: center;
+      }
+      .thirddiv > div > a {
+        text-decoration: none;
+        color: black;
+      }
+      .thirddiv {
+        display: flex;
+        justify-content: center;
+      }
+      .thirddiv > div {
+        padding: 0% 0.5%;
+      }
+      /*4th body section start*/
+      .manual-carosel {
+        margin: 30px 0;
+        padding: 0;
+      }
+      .outter-slider {
+        width: 85%;
+        margin: 20px auto;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+      }
+      .inner-slider {
+        width: 225%; /*Very Important*/
+        display: flex;
+        justify-content: center;
+      }
+      .outter-slider .inner-slider .content {
+        width: 11.11%;
+        height: 400px;
+        transition: 0.25s;
+        position: relative;
+        text-align: center;
+      }
+      .content > h4 {
+        font-weight: 800;
+        margin: 3%;
+      }
+      .content > p {
+        font-weight: 600;
+        color: grey;
+        margin: 3%;
+      }
+      .content > h3 {
+        font-weight: 600;
+        margin: 3%;
+      }
+      .content a img {
+        width: 70%;
+        height: 280px;
+        margin: 0 auto;
+      }
+      .content a img:hover {
+        width: 100%;
+        height: 290px;
+      }
+      .outter-slider div button {
+        background: white;
+        border-radius: 50%;
+        font-size: 15px;
+        padding: 15px;
+        border: 1px solid black;
+      }
+      .outter-slider .button1,
+      .outter-slider .button2 {
+        position: absolute;
+        z-index: 2;
+        width: 45px;
+        height: 45px;
+      }
+      .outter-slider > .button1 {
+        top: 130px;
+        right: 94.5%;
+      }
+      .outter-slider > .button2 {
+        top: 130px;
+        left: 94.5%;
+      }
+      .t5outter {
+        width: 80%;
+        height: 300px;
+        margin: 20px auto;
+        display: flex;
+      }
+      .t5inner {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 1.5%;
+      }
+      .t5inner1 > a > img {
+        width: 95%;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .t5inner1 > a > img:hover {
+        width: 100%;
+        height: 260px;
+      }
+      .t5inner2 {
+        background: white;
+        text-align: center;
+      }
+      .t5inner2 > h3,
+      .t5inner2 > p {
+        font-weight: 700;
+        margin: 5px;
+      }
+      .t5inner2 > p {
+        color: grey;
+      }
+      .t5section {
+        margin-bottom: 50px;
+      }
+      .t6section {
+        margin-top: 50px;
+      }
+      .t6outter {
+        width: 80%;
+        height: 300px;
+        margin: 20px auto;
+        display: flex;
+      }
+      .t6inner {
+        width: 30%;
+        height: 300px;
+        margin: 20px 1.5%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .t6inner1 > a > img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+      }
+      .t6inner2 {
+        background: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        position: absolute;
+        top: 270px;
+        height: 138px;
+      }
+      .t6inner:hover .t6inner2 {
+        top: 162px;
+      }
+      .t6inner2 > h3,
+      .t6inner2 > p {
+        font-weight: 700;
+        margin: 5px;
+      }
+      .nitish {
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4285;
+        color: #333;
+        background-color: #f4f4f4;
+        margin-top: 5rem;
+      }
+
+      .trendingFeed {
+        background-color: white;
+        padding: 3rem 12vw;
+        margin: auto;
+        height: 39rem;
+        box-sizing: border-box;
+      }
+      .blogs {
+        display: flex;
+        height: 25rem;
+      }
+      .trendingFeed a:link {
+        text-decoration: none;
+      }
+      .name {
+        color: black;
+      }
+      #nitish img {
+        width: 100%;
+      }
+      .mainBlog {
+        width: 65%;
+      }
+      .mainBlog > .name {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
+      }
+      .blogDesc > .name {
+        font-weight: 700;
+        height: 3.2rem;
+        margin-top: 0.2rem;
+        margin-bottom: 1rem;
+      }
+      .readMore {
+        color: hotpink;
+      }
+      .otherBlogs > a {
+        display: flex;
+      }
+      .singleBlog > img {
+        width: 10rem;
+        height: 5.7rem;
+        margin-bottom: 1.9rem;
+        margin-right: 1rem;
+        margin-left: 1.25rem;
+      }
+      .showMore {
+        background-color: #fadede;
+        padding: 0.6rem 1.2rem;
+        color: black;
+        display: table;
+        margin: auto;
+        border-radius: 1.5rem;
+      }
+      .homeWidget {
+        padding: 0 12vw;
+        margin: 3rem 0px;
+      }
+      .sliderLooks {
+        position: relative;
+      }
+      .looksList {
+        display: flex;
+        overflow: hidden;
+      }
+      .looksArrow {
+        position: absolute;
+        left: -3rem;
+        top: 5.5rem;
+        z-index: 1;
+        cursor: pointer;
+      }
+      .looksList img {
+        height: 16.2rem;
+        width: 16.3rem;
+        margin-right: 2rem;
+        border-radius: 0.5rem;
+      }
+      .looksList img:hover {
+        height: 16.5rem;
+        width: 16.5rem;
+        margin-right: 1.8rem;
+        margin-bottom: -0.5rem;
+      }
+      .looksArrow2 {
+        position: absolute;
+        right: -2.5rem;
+        top: 5rem;
+        z-index: 1;
+        cursor: pointer;
+      }
+      .nlooks {
+        transition: all 0.7s;
+      }
+      .nlooks > a {
+        text-decoration: none;
+      }
+      .looksName {
+        background-color: white;
+        height: 4rem;
+        width: 14.5rem;
+        text-align: center;
+        color: black;
+        border-radius: 0.4rem;
+        position: relative;
+        top: -2rem;
+        left: 0.9rem;
+        box-shadow: 2px 2px 3px;
+      }
+      .looksName p {
+        font-size: 0.9rem;
+        position: relative;
+        top: 1.4rem;
+      }
+      .sliderVideo {
+        position: relative;
+      }
+      .videoList {
+        display: flex;
+        overflow: hidden;
+      }
+      .videoArrow {
+        position: absolute;
+        left: -3rem;
+        top: 5.5rem;
+        z-index: 1;
+        cursor: pointer;
+      }
+      .videoArrow2 {
+        position: absolute;
+        right: -3rem;
+        top: 5rem;
+        z-index: 1;
+        cursor: pointer;
+      }
+      .nvideo {
+        transition: all 0.7s;
+        height: 17.2rem;
+        min-width: 22.2rem;
+        margin-right: 2.5rem;
+        position: relative;
+        margin-left: 1px;
+        z-index: 0;
+        overflow: hidden;
+      }
+      .nvideo img:hover {
+        height: 17rem;
+        width: 22.8rem;
+      }
+      .nvideo img {
+        width: 100%;
+        height: 16.5rem;
+      }
+      .nvideo > a {
+        text-decoration: none;
+      }
+      .videoName {
+        background-color: white;
+        height: 3.2rem;
+        width: 100%;
+        color: black;
+        position: absolute;
+        bottom: 0.5rem;
+        z-index: 1;
+        right: 0px;
+        box-shadow: 0px 4px 5px gray;
+      }
+      .videoName p {
+        font-size: 0.9rem;
+        position: relative;
+        top: 0.5rem;
+        left: 1rem;
+      }
+      .display {
+        display: none;
+      }
+      #vidhome {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+      }
+      .vidContent {
+        z-index: 99999;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        animation-name: animatebottomTop;
+        margin: auto;
+        width: 1095px;
+        margin-top: 10%;
+        height: 616px;
+      }
+
+
+      /* abhishekpart */
+
+      #a_body{
+        height: 100vh;
+        font-family: Arial;
+        /* background-color: rgba(136, 171, 224, 0.664); */
+    }
+   
+    .a_button{
+        position: absolute;
+        display: flex;
+        float: right;
+        width: auto;
+        height: 3%;
+        padding: 7px;
+        background-color: rgba(240, 240, 240, 0.925);
+        border-radius: 29px;
+        /* border: 1px solid black; */
+        /* top: -8%; */
+        right: 2%;
+        
+        z-index: 3;
+    }
+    .a_button1{
+        position: absolute;
+        display: flex;
+        float: right;
+        width: auto;
+        height: 3%;
+        padding: 7px;
+        background-color: rgba(240, 240, 240, 0.925);
+        border-radius: 29px;
+        /* border: 1px solid black; */
+        /* top: 64%; */
+        right: 2%;
+        z-index: 3;
+    }
+
+    .a_button2{
+        position: absolute;
+        display: flex;
+        float: right;
+        width: auto;
+        height: 3%;
+        padding: 7px;
+        background-color: rgba(240, 240, 240, 0.925);
+        border-radius: 29px;
+        /* border: 1px solid black; */
+        /* top: 126%; */
+        right: 2%;
+        z-index: 3;
+    }
+
+    .chatBox{
+        position: fixed;
+        width: 5%;
+        height: 10%;
+        /* background-color: red; */
+        z-index: 2;
+        left: 93%;
+        top: 85%;
+        
+    }
+    .chatBox>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 10px 10px 10px grey, -10px -10px 10px grey;
+    }
+    
+    .a_main{
+        width: 80%;
+        height: 45%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        /* background-color: rgb(231, 12, 12); */
+        /* border: 3px solid grey; */
+        margin: auto;
+        /* overflow:hidden; */
+        
+    }
+
+    #a_body h1{
+        width: max-content;
+        background: linear-gradient(transparent 60%, rgb(255, 151, 151) 30px);
+    }
+    .a_p2 a{
+        width: 100%;
+        height: 70%;
+    }
+    .a_p2 img{
+        width: 100%;
+        height: 70%;
+    }
+    .a_p21 a{
+        width: 100%;
+        height: 70%;
+    }
+    .a_p21 img{
+        width: 100%;
+        height: 70%;
+    }
+    .a_p22 a{
+        width: 100%;
+        height: 70%;
+    }
+    .a_p22 img{
+        width: 100%;
+        height: 70%;
+    }
+    .a_2{
+        width: 105%;
+        height: 65%;
+        display: flex;
+        /* justify-content: center; */
+        /* border: 1px solid grey; */
+        overflow: hidden;
+        
+    }
+    .a_p2:hover{
+        border: 1px solid pink;
+    }
+    .a_p21:hover{
+        border: 1px solid pink;
+    }
+    .a_p22:hover{
+        border: 1px solid pink;
+    }
+    .a_p2{
+        width: 25%;
+        height: 80%;
+        padding: 4%;
+        border: 1px solid grey;
+        font-size: 15px;
+        position: relative;
+        
+        /* left: ; */
+        /* background-color: blue; */
+    }
+    .a_p2 p{
+        margin-top: -1px;
+        text-align: center;
+    }
+    .a_p21{
+        width: 25%;
+        height: 80%;
+        padding: 4%;
+        border: 1px solid grey;
+        font-size: 15px;
+        position: relative;
+        
+        /* left: ; */
+        /* background-color: blue; */
+    }
+    .a_p22{
+        width: 25%;
+        height: 80%;
+        padding: 4%;
+        border: 1px solid grey;
+        font-size: 15px;
+        position: relative;
+        
+        /* left: ; */
+        /* background-color: blue; */
+    }
+    .a_p21 p{
+        margin-top: -1px;
+        text-align: center;
+    }
+    .a_p22 p{
+        margin-top: -1px;
+        text-align: center;
+    }
+    .a_1{
+        width: auto;
+        height: 100%;
+    }
+    .a_p1 {
+        width: auto;
+        height: 100%;
+        border: none;
+        padding: 0%;
+        /* border: 1px solid grey; */
+        
+    }
+    .a_p1>img{
+        width: 100%;
+        height: 65%;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .a_p2 p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+    .a_p2 a{
+        text-decoration: none;
+        color: black;
+    }
+    .a_p21 p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+    .a_p21 a{
+        text-decoration: none;
+        color: black;
+    }
+    .a_p22 p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+    .a_p22 a{
+        text-decoration: none;
+        color: black;
+    }
+    .a_refer {
+        margin: auto;
+        background-color: yellow;
+        width: 80%;
+        height: 25%;
+    }
+    .a_refer img{
+        width: 103%;
+        height: 100%;
+    }
+    .a_margin{
+        margin-bottom: 50px;
+    }
+    .a_video{
+        width: 100%;
+        /* height: 60%; */
+    }
+    .video iframe{
+        width: 100%; 
+        height: 800px;
+    }
+    .video{
+        width: 100%;
+        height: 600px;
+        border: 1px solid black;
+        /* opacity:"0.1"; */
+    }
+    .video_info{
+        position: relative;
+        width: 50%;
+        top: -109.39%;
+        z-index: 2;
+    }
+
+
+    /* footer */
+    footer {
+      position: relative;
+      background-color: white;
+      padding: 3rem 0px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      /* z-index: 3; */
+    }
+    #footer {
+      display: flex;
+      padding: 0px 12vw;
+      text-transform: uppercase;
+      font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+        sans-serif;
+        /* z-index: 1; */
+    }
+    #footer > ul {
+      padding: 0px 30px 0px 0px;
+      list-style-type: none;
+      color: #818181;
+    }
+    #footer h6 {
+      font-size: 1rem;
+    }
+    #footer > ul > li a {
+      text-decoration: none;
+      color: black;
+      text-transform: none;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 0.87rem;
+    }
+    #footer li {
+      margin-top: 0.37rem;
+      line-height: 1.2;
+    }
+    #footerBottom {
+      display: flex;
+      padding: 0px 12vw;
+      margin-top: 2.3rem;
+      position: relative;
+    }
+    footer button {
+      height: 2.3rem;
+      color: white;
+      background-color: black;
+      border: none;
+      font-size: 0.9rem;
+      margin-left: 0px;
+      width: 10rem;
+      vertical-align: middle;
+    }
+    footer input {
+      height: 2.3rem;
+      width: 19rem;
+      margin-top: 1rem;
+    }
+    /* #sect2 label {
+        position: absolute;
+        right: 12vw;
+      } */
+    #sect2 img {
+      width: 7.5rem;
+      height: 2.5rem;
+      margin-top: 1rem;
+    }
+    #sect2 {
+      position: absolute;
+      right: 12vw;
+    }
+    #img1 {
+        float: left;
+      /* position: absolute; */
+      /* right: -80%; */
+    }
+    #img2 {
+      position: absolute;
+      right: 2px;
+    }
+    #footer > ul > li a:hover {
+      color: #d4a255;
+    }
+    </style>
+  </head>
+  <body>
+    <!--Header Section 1-->
+    <div>
+      <section class="th1section">
+        <div class="th1outter">
+          <div class="th1inner1">
+            <a href="">
+              <img
+                src="https://www.pinclipart.com/picdir/big/196-1964826_free-png-open-gift-box-red-transparent-png.png"
+                alt="photo"
+              />
+            </a>
+            <a href="">
+              <p>MyGlamm Youthfull Launch</p>
+            </a>
+            <a href="ProductPage1.html">
+              <h3>SHOP NOW</h3>
+            </a>
+          </div>
+
+          <div class="th1inner2">
+            <a href="">
+              <img
+                src="https://purepng.com/public/uploads/medium/purepng.com-small-househousebuildinghomewood-houseconcrete-house-1701528486633iru3y.png"
+                alt="photo"
+              />
+            </a>
+            <a href="">
+              <p>MyGlamm Store</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Header Section 2-->
+    <section class="th2section">
+      <div class="th2outter">
+        <div class="th2inner">
+          <div class="th2inner1">
+            <a href="">
+              <img
+                src="	https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div class="th2inner2 topsearchbox">
+            <span>
+              <img
+                src="	https://www.myglamm.com/images/search.svg"
+                alt="search"
+              />
+            </span>
+            <span>
+              <input
+                type="text"
+                placeholder="Find LipStick,EyeLiner,MakeUp,etc"
+              />
+            </span>
+          </div>
+          <div class="th2inner3 reffer">
+            <a href="">
+              <div class="reffer1">
+                <p>Refer & Earn</p>
+              </div>
+            </a>
+          </div>
+          <div class="th2inner4">
+            <a href="BagMyGlemm.html">
+              <img
+                src="https://image.flaticon.com/icons/png/128/63/63356.png"
+                alt="smallBag"
+              />
+            </a>
+          </div>
+          <div class="th2inner5">
+            <a href="signuppagemyglamm.html">
+              <img
+                src="https://th.bing.com/th/id/Re9e626c5437637615ab40f0ccf6f722a?rik=tjUBw7pBREHJnA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_257423.png&ehk=tL787%2ba7DX2pOvcHOx0HscDJNAFcWPyX3ym6SBb%2fOR8%3d&risl=&pid=ImgRaw"
+                alt="smallBag"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Header Section 3-->
+    <section class="th3section">
+      <div class="th3outter">
+          <div class="th3inner">
+              <div class="th3inner1 shop">
+                  <h4>SHOP</h4>
+                  <!--Header Section Hover Div1-->
+                  <div class="submenushop">
+                      <div class="th31outter">
+    
+    <div class="th31inner">
+            <a><h1>BATH &amp; BODY</h1></a>
+            <a><p>Face Washes</p></a>
+            <a><p>Shower Gels</p></a>
+            <a><p>Soaps</p></a>
+            <a><p>Hand Care</p></a>
+            <a><p>Foot Care</p></a>
+            <a><p>Body Moisurizers</p></a>
+    </div>
+    <div class="th31inner">
+        <a><h1>SANITIZING CARE</h1></a>
+        <a><p>Santizing Wipes</p></a>
+        <a><p>Surface Spray</p></a>
+        <a><p>Santizing Kits</p></a>
+        <a><p>Santizing Spray</p></a>
+        <a><p>Hand Santizer</p></a>
+        <a><p></p></a>
+    </div>
+    <div class="th31inner">
+        <a><h1>SKINCARE</h1></a>
+        <a><p>Face Cleanser</p></a>
+        <a><p>Cleanser</p></a>
+        <a><p>Toner</p></a>
+        <a><p>Body Lotion</p></a>
+        <a><p>Sheet Mask</p></a>
+        <a><p>Sun Screen</p></a>
+    </div>
+    <div class="th31inner">
+        <a><h1>FACE</h1></a>
+        <a><p>Face Sets</p></a>
+        <a><p>Fixing Powder</p></a>
+        <a><p>Primer</p></a>
+        <a><p>Foundation</p></a>
+        <a><p>Highlighter</p></a>
+        <a><p>Blush</p></a>
+        <a><p>Cheek Stain</p></a>
+        <a><p>Setting Powder</p></a>
+        <a><p>Bronzer</p></a>
+    </div>
+    <div class="th31inner">
+        <a><h1>EYES</h1></a>
+        <a><p>Eye Shadow</p></a>
+        <a><p>Eyeliner</p></a>
+        <a><p>Eyebrows</p></a>
+        <a><p>Eye Sparkle</p></a>
+        <a><p>Mascara</p></a>
+        <a><p>Kajal</p></a>
+    </div>
+    <div class="th31inner">
+        <a><h1>LIPS</h1></a>
+        <a href="ProductPage2.html" style="text-decoration: none; color:black "><p>Lipstick</p></a>
+        <a><p>Matte Lipstick</p></a>
+        <a><p>Metallic Lipstick</p></a>
+        <a><p>Hi-Shine Lipstick</p></a>
+        <a><p>Liquid Lipstick</p></a>
+        <a><p>Lip Gloss</p></a>
+        <a><p>Lipliners</p></a>
+        <a><p>Lip Sparkle</p></a>
+        <a><p>Lip Chalks</p></a>
+    </div>
+    <div class="th31inner">
+        <a ><h1>NAILS</h1></a>
+        <a href="ProductPage1.html" style="text-decoration: none; color:black "><p>Nail Polish</p></a>
+        <a><p>Matte Nail Polish</p></a>
+        <a><p>Matte Nail Enamel</p></a>
+        <a><p>Glossy Nail Enamel</p></a>
+        <a><p>Nail Lacquer</p></a>
+        <a><p></p></a>
+    </div>
+
+</div>
+                  </div>
+              </div>
+              <div class="th3inner1 offer">
+                <h4>OFFERS</h4>
+                <div class="thoffero">
+                    <div class="thofferi">
+                        <a href=""><p>Today's Offers</p></a>
+                        <a href=""><p>Refer Discount</p></a>
+                        <a href=""><p>Point Back Offers</p></a>
+                        <a href=""><p>Flat 15% Discount</p></a>
+                        <a href=""><p>Buy 1 Get 1 Free</p></a>
+                      </div>
+                </div>
+            </div>
+            <div class="th3inner1 rewards">
+                <h4>REWARDS</h4>
+                <div class="threwardo">
+                    <div class="threwardi">
+                        <a href=""><p>Sign In/Sign Up</p></a>
+                        <a href=""><p>myGlemm INSIDER</p></a>
+                        <a href=""><p>myGlemm PARTIES</p></a>
+                        <a href=""><p>MYglemm EXPERIENCE</p></a>
+                        <a href=""><p>Brand Stories</p></a>
+                      </div>
+                </div> 
+            </div>
+            <div class="th3inner1 expert">
+                <h4>EXPERTS</h4>
+                <div class="thexperto">
+                    <div class="thexperti">
+                        <a href=""><p>Daniel Bauer</p></a>
+                        <a href=""><p>Cory Walia</p></a>
+                        <a href=""><p>Influencers</p></a>
+                      </div>
+                </div> 
+            </div>
+            <div class="th3inner1 studio">
+                <h4>MYGLEMM STUDIO</h4>
+                <div class="thstudioo">
+                    <div class="thstudioi">
+                        <a href=""><p>Blog</p></a>
+                        <a href=""><p>Looks</p></a>
+                        <a href=""><p>Most Sell</p></a>
+                        <a href=""><p>New Launches</p></a>
+                    </div>
+                </div> 
+            </div>
+            <div class="th3inner1">
+                <h4>MANISH MALHOTRA</h4>
+            </div>
+          </div>
+      </div>
+  </section>
+
+    
+
+    <!--First Div-->
+    <section>
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <input type="radio" name="radio-btn" id="radio5" />
+          <input type="radio" name="radio-btn" id="radio6" />
+          <input type="radio" name="radio-btn" id="radio7" />
+          <input type="radio" name="radio-btn" id="radio8" />
+
+          <div class="image first">
+            <img
+              src="https://files.myglamm.com/site-images/original/Homepage_3.jpg"
+              alt="photo1"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://files.myglamm.com/site-images/original/June-Homepage_1.jpg"
+              alt="photo2"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://files.myglamm.com/site-images/original/Refer-WEB-HP_2.jpg"
+              alt="photo3"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://files.myglamm.com/site-images/original/IT-kit-2-banner_1.jpg"
+              alt="photo4"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://files.myglamm.com/site-images/original/MM-Gel-Finish-Nail-Lacquer-Desktop.jpg"
+              alt="photo5"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://files.myglamm.com/site-images/original/Superfoods-Kajal-Homepage-desktop.jpg"
+              alt="photo6"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://files.myglamm.com/site-images/original/MM-skincare-website-banner.jpg"
+              alt="photo7"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://files.myglamm.com/site-images/original/Free-Sale-Banner_1.jpg"
+              alt="photo8"
+            />
+          </div>
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+          <div class="auto-btn6"></div>
+          <div class="auto-btn7"></div>
+          <div class="auto-btn8"></div>
+        </div>
+
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+          <label for="radio6" class="manual-btn"></label>
+          <label for="radio7" class="manual-btn"></label>
+          <label for="radio8" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+
+    <!--Scecond Div-->
+    <section>
+      <div class="second">
+        <img
+          src="https://files.myglamm.com/site-images/original/Youthfull-Strip-Desktop.jpg"
+          alt="Div2photo"
+        />
+      </div>
+    </section>
+
+    <!--Third Div-->
+    <section class="thirdsection">
+      <h3>Shop By Categories</h3>
+      <div class="thirddiv">
+        <div>
+          <a href="">
+            <img
+              src="https://files.myglamm.com/site-images/original/SKin-1-2.png"
+              alt="photo1"
+            />
+            <p class="categoryname">Skin</p>
+          </a>
+        </div>
+        <div>
+          <a href="ProductPage2.html">
+            <img
+              src="https://files.myglamm.com/site-images/original/Lips-3.png"
+              alt="photo2"
+            />
+            <p class="categoryname">Lips</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://files.myglamm.com/site-images/original/Eyes-4.png"
+              alt="photo3"
+            />
+            <p class="categoryname">Eyes</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://files.myglamm.com/site-images/original/Face-5.png"
+              alt="photo4"
+            />
+            <p class="categoryname">Face</p>
+          </a>
+        </div>
+        <div>
+          <a href="ProductPage1.html">
+            <img
+              src="https://files.myglamm.com/site-images/original/Nails-1.png"
+              alt="photo5"
+            />
+            <p class="categoryname">Nails</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://files.myglamm.com/site-images/original/App-PersonalCare_2.png"
+              alt="photo6"
+            />
+            <p class="categoryname">Sanitizing Care</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://files.myglamm.com/site-images/original/Bath.png"
+              alt="photo7"
+            />
+            <p class="categoryname">Bath & body</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://files.myglamm.com/site-images/original/1-tinted-perfection-chisel-it-1-2-1.png"
+              alt="photo8"
+            />
+            <p class="categoryname">Makeup Kit</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Fourth Div-->
+    <section class="manual-carosel">
+      <div class="thead4">
+        <h3>Bestseller</h3>
+      </div>
+      <div class="outter-slider">
+        <div class="button1"><button id="button1"><</button></div>
+        <div class="inner-slider">
+          <div class="content firstdiv1">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/vintage-wine-7.jpeg"
+                alt="photo1"
+              />
+            </a>
+            <h4>Manish Malhotra Lipstick</h4>
+            <p>Light Weight Long-wear</p>
+            <h3>Rs. 950</h3>
+          </div>
+          <div class="content">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/08-slow-fade-2.jpeg"
+                alt="photo2"
+              />
+            </a>
+            <h4>Lit Liquid Matte Lipstick</h4>
+            <p>Morgina oil Enriched Lipstick</p>
+            <h3>Rs. 395</h3>
+          </div>
+          <div class="content">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/SHEET-MASK1-3_9.jpg"
+                alt="photo2"
+              />
+            </a>
+            <h4>Glow Iridecent Brigthening</h4>
+            <p>Rosehip Oil</p>
+            <h3>Rs. 199</h3>
+          </div>
+          <div class="content">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/1623084270906-tinted-perfection-base-primer-pore-minimiser-open-product-with-swatch.jpeg"
+                alt="photo4"
+              />
+            </a>
+            <h4>Tinted Perfection Face Premier</h4>
+            <p>Pore Minmiser</p>
+            <h3>Rs. 1095</h3>
+          </div>
+          <div class="content">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/1623081358210-blackupdate.jpeg"
+              />
+            </a>
+            <h4>Jet Set Eyes Kajal</h4>
+            <p>Long Wear Kohl Pencil</p>
+            <h3>Rs. 750</h3>
+          </div>
+          <div class="content">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/Twist-it-mascara.jpg"
+              />
+            </a>
+            <h4>Twist It Mascara</h4>
+            <p>Volumising And Curling Mascara</p>
+            <h3>Rs. 645</h3>
+          </div>
+          <div class="content">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/mandarin-brightening-sheet-mask-copy.jpeg"
+              />
+            </a>
+            <h4>K Play Mandarin</h4>
+            <p>Mandarin Infused Brightening</p>
+            <h3>Rs. 145</h3>
+          </div>
+          <div class="content">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/1623083403382-Sanitising-Wipes.jpeg"
+              />
+            </a>
+            <h4>WipeOut Sanitizing Wipes</h4>
+            <p>Eucalyptus and lemon Wipes</p>
+            <h3>Rs. 69</h3>
+          </div>
+          <div class="content">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/400x400/1623083625047-Towels-1-1.jpeg"
+              />
+            </a>
+            <h4>WipeOut Cleansing Towel</h4>
+            <p>Neem And PH Balanced</p>
+            <h3>Rs. 249</h3>
+          </div>
+        </div>
+
+        <div class="button2"><button id="button2">></button></div>
+      </div>
+    </section>
+
+    <!--Fifth Div-->
+    <section class="t5section">
+      <div class="t5h3">
+        <h3>offers of the week</h3>
+      </div>
+
+      <div class="t5outter">
+        <div class="t5inner">
+          <div class="t5inner1">
+            <a href="">
+              <img
+                src="
+                     https://files.myglamm.com/site-images/original/Youthfull-700x488.jpg"
+                alt="photo1 "
+              />
+            </a>
+          </div>
+          <div class="t5inner2">
+            <h3>MyGlamm Youthfull Launch</h3>
+            <p>
+              A complete range of Hydrating Skin Care With Water Bank Technology
+            </p>
+          </div>
+        </div>
+
+        <div class="t5inner">
+          <div class="t5inner1">
+            <a href="">
+              <img
+                src="
+                     https://files.myglamm.com/site-images/original/bitmap@2x-2.jpg"
+                alt="photo1"
+              />
+            </a>
+          </div>
+          <div class="t5inner2">
+            <h3>Exclussive Offer</h3>
+            <p>Get Rs.150 OFF on your first order of Rs.500</p>
+          </div>
+        </div>
+
+        <div class="t5inner">
+          <div class="t5inner1">
+            <a href="">
+              <img
+                src="
+                     https://files.myglamm.com/site-images/original/friendship-has-benefits.png"
+                alt="photo1"
+              />
+            </a>
+          </div>
+          <div class="t5inner2">
+            <h3>Refer And Earn</h3>
+            <p>Whatever Your Friend Buy's You Will Get Free</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Sixth Div-->
+    <section class="t6section">
+      <div class="t6head">
+        <h3>shop by skin tone</h3>
+      </div>
+      <div class="t6outter">
+        <div class="t6inner">
+          <div class="t6inner1">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/original/light-skin_1.jpeg"
+                alt="photo"
+              />
+            </a>
+          </div>
+          <div class="t6inner2">
+            <h3>LIGHT SKIN</h3>
+            <p>
+              Light skin tones are the perfect canvas for everything from
+              pastels to pop shades. A little bit of blush, a little bit of
+              warmth and a hint of glow is all you need to enhance your natural
+              skin tone.
+            </p>
+          </div>
+        </div>
+        <div class="t6inner">
+          <div class="t6inner1">
+            <a href="">
+              <img
+                src="https://files.myglamm.com/site-images/original/medium-skin_1.jpeg"
+                alt="photo"
+              />
+            </a>
+          </div>
+          <div class="t6inner2">
+            <h3>MEDIUM SKIN</h3>
+            <p>
+              Medium skin has just the right balance of warm and golden
+              undertones to give off a natural, almost sun-kissed glow. Play up
+              your gorgeous olive skin with peaches, corals, reds, metallics and
+              earthy shades!
+            </p>
+          </div>
+        </div>
+
+        <div class="t6inner">
+          <div class="t6inner1">
+            <a href="">
+              <img
+                src="	https://files.myglamm.com/site-images/original/dusky-skin_1.jpeg"
+                alt="photo"
+              />
+            </a>
+          </div>
+          <div class="t6inner2">
+            <h3>DUSKY SKIN</h3>
+            <p>
+              Deep and dusky skin can pull off just about any shade. Use that to
+              your advantage with jewel tones like ruby, amethyst and emerald,
+              as well as radiant contrasting hues like cool aquas and snowy
+              whites to make you stand out.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="nitish">
+      <section class="wrapper">
+        <section class="trendingFeed">
+          <h3
+            style="
+              margin: auto auto 2.5rem;
+              font-weight: 600;
+              width: max-content;
+              text-transform: uppercase;
+              padding: 0px 5px;
+              background: linear-gradient(
+                transparent 60%,
+                rgb(255, 151, 151) 30px
+              );
+              font-size: 1.4rem;
+            "
+          >
+            Trending Feed
+          </h3>
+          <div class="blogs">
+            <a class="mainBlog" href="">
+              <img
+                class="mainBlogImg"
+                src="https://img-static.popxo.com/tr:w-600,rt-auto,q-40/app_photos/images/3612/original/Untitled_design_(84).png"
+                alt=""
+              />
+              <p class="name">
+                Sanitize, Shower & Moisturise: Safety Steps I Take When I Get
+                Home From Grocery Runs
+              </p>
+              <p class="readMore">Read more...</p>
+            </a>
+            <div class="otherBlogs">
+              <a class="singleBlog" href="">
+                <img
+                  src="https://img-static.popxo.com/tr:w-600,rt-auto,q-40/app_photos/images/3631/original/FB-bipasha.jpg"
+                  alt=""
+                />
+                <div class="blogDesc">
+                  <p class="name">
+                    Sunshine In My Pocket: Bipasha Basu Looks Like A Glowing
+                    Diva in These Photos!
+                  </p>
+                  <p class="readMore">Read more...</p>
+                </div>
+              </a>
+              <a class="singleBlog" href="">
+                <img
+                  src="https://img-static.popxo.com/tr:w-600,rt-auto,q-40/app_photos/images/3605/original/Untitled_collage_-_2020-07-24T150829.510.jpg"
+                  alt=""
+                />
+                <div class="blogDesc">
+                  <p class="name">
+                    Sunshine In My Pocket: Bipasha Basu Looks Like A Glowing
+                    Diva in These Photos!
+                  </p>
+                  <p class="readMore">Read more...</p>
+                </div>
+              </a>
+              <a class="singleBlog" href="">
+                <img
+                  src="https://img-static.popxo.com/tr:w-600,rt-auto,q-40/app_photos/images/3663/original/most-popular-skincare-ingredients-2020-FB.png"
+                  alt=""
+                />
+                <div class="blogDesc">
+                  <p class="name">
+                    Sunshine In My Pocket: Bipasha Basu Looks Like A Glowing
+                    Diva in These Photos!
+                  </p>
+                  <p class="readMore">Read more...</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a class="showMore" href="https://www.myglamm.com/glammstudio">
+            Show More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="11"
+              viewBox="0 0 15 11"
+              style="margin-left: 0.5rem"
+            >
+              <path
+                fill="#1E201D"
+                d="M9.577.824a.503.503 0 1 0-.717.71l3.634 3.634H.502A.5.5 0 0 0 0 5.67c0 .28.222.51.502.51h11.992L8.86 9.806a.514.514 0 0 0 0 .717c.2.2.524.2.717 0l4.494-4.495a.493.493 0 0 0 0-.71L9.577.824z"
+              ></path>
+            </svg>
+          </a>
+        </section>
+        <section class="homeWidget">
+          <h3
+            style="
+              margin: auto auto 2.5rem;
+              font-weight: 600;
+              width: max-content;
+              padding: 0px 5px;
+              background: linear-gradient(
+                transparent 60%,
+                rgb(255, 151, 151) 30px
+              );
+              font-size: 1.4rem;
+            "
+          >
+            LOOKS WE LOVE
+          </h3>
+          <div class="sliderLooks">
+            <img
+              class="looksArrow"
+              onclick="moveLeft()"
+              src="https://www.myglamm.com/images/slickArrowLeft.svg"
+              alt=""
+            />
+            <div class="looksList">
+              <div class="nlooks">
+                <a href="">
+                  <img
+                    src="https://files.myglamm.com/site-images/400x400/mumbai-indians-ipl-fever_1.jpeg"
+                    alt=""
+                  />
+                  <div class="looksName">
+                    <p>IPL FEVER-MUMBAI INDIANS</p>
+                  </div>
+                </a>
+              </div>
+              <div class="nlooks">
+                <a href="">
+                  <img
+                    src="https://files.myglamm.com/site-images/400x400/sunkissed_2.jpeg"
+                    alt=""
+                  />
+                  <div class="looksName">
+                    <p>SUN-KISSED</p>
+                  </div>
+                </a>
+              </div>
+              <div class="nlooks">
+                <a href="">
+                  <img
+                    src="https://files.myglamm.com/site-images/400x400/74.jpeg"
+                    alt=""
+                  />
+                  <div class="looksName">
+                    <p>HOLLYWOOD GLAM MAKEUP LOOK</p>
+                  </div>
+                </a>
+              </div>
+              <div class="nlooks">
+                <a href="">
+                  <img
+                    src="https://files.myglamm.com/site-images/400x400/starry-eyed-riya-jain.jpeg"
+                    alt=""
+                  />
+                  <div class="looksName">
+                    <p>STARRY EYES</p>
+                  </div>
+                </a>
+              </div>
+              <div class="nlooks">
+                <a href="">
+                  <img
+                    src="https://files.myglamm.com/site-images/400x400/filmfare-2.jpeg"
+                    alt=""
+                  />
+                  <div class="looksName">
+                    <p>SUN_KISSED</p>
+                  </div>
+                </a>
+              </div>
+              <div class="nlooks">
+                <a href="">
+                  <img
+                    src="https://files.myglamm.com/site-images/400x400/74.jpeg"
+                    alt=""
+                  />
+                  <div class="looksName">
+                    <p>IPL FEVER-MUMBAI INDIANS</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <img
+              class="looksArrow2"
+              onclick="moveRight()"
+              src="https://www.myglamm.com/images/slickArrowRight.svg"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="homeWidget">
+          <h3
+            style="
+              margin: auto auto 2.5rem;
+              font-weight: 600;
+              width: max-content;
+              padding: 0px 5px;
+              background: linear-gradient(
+                transparent 60%,
+                rgb(255, 151, 151) 30px
+              );
+              font-size: 1.4rem;
+            "
+          >
+            LOOKS WE LOVE
+          </h3>
+          <div class="sliderVideo">
+            <img
+              class="videoArrow"
+              onclick="videoLeft()"
+              src="https://www.myglamm.com/images/slickArrowLeft.svg"
+              alt=""
+            />
+            <div class="videoList">
+              <div class="nvideo">
+                <!-- <a href=""> -->
+                <img
+                  onclick="playvid()"
+                  src="https://i.ytimg.com/vi/y63q84dIEEg/hqdefault.jpg"
+                  alt=""
+                />
+                <div class="videoName">
+                  <p>Pose HD Lipsticks</p>
+                </div>
+                <!-- </a> -->
+              </div>
+              <div class="nvideo">
+                <a href="">
+                  <img
+                    src="https://i.ytimg.com/vi/exnRLtgQ3l0/hqdefault.jpg"
+                    alt=""
+                  />
+                  <div class="videoName">
+                    <p>LIT Liquid Matte Lipstick</p>
+                  </div>
+                </a>
+              </div>
+              <div class="nvideo">
+                <a href="">
+                  <img
+                    src="https://i.ytimg.com/vi/gnAZk01Jsuw/hqdefault.jpg"
+                    alt=""
+                  />
+                  <div class="videoName">
+                    <p>HJet Set Eyes Kajal Eyeliner</p>
+                  </div>
+                </a>
+              </div>
+              <div class="nvideo">
+                <a href="">
+                  <img
+                    src="https://i.ytimg.com/vi/uX6nekIw3ig/hqdefault.jpg"
+                    alt=""
+                  />
+                  <div class="videoName">
+                    <p>Welcome To MyGlamm</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <img
+              class="videoArrow2"
+              onclick="videoRight()"
+              src="https://www.myglamm.com/images/slickArrowRight.svg"
+              alt=""
+            />
+          </div>
+          <div id="vidhome" class="display" onclick="removevid()">
+            <div id="vidplayer" class="vidContent">
+              <iframe
+                width="1095"
+                height="616"
+                src="https://www.youtube.com/embed/y63q84dIEEg"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <!-- abhishekData -->
+
+    <div id="a_body">
+      
+        <center><h1>MANISH MALHOTRA COLLECTION</h1></center>
+      
+        <div class="a_main a_margin">
+          <div class="a_button">
+                
+            <button style="margin-left: 8px; " onclick="a_left()">◀</button>
+            <button style=" margin-left: 8px; " onclick="a_right()">▶	</button>
+              
+        </div>
+            <div class="a_1">
+                <div class="a_p1"><img src = "https://files.myglamm.com/site-images/600x600/MM-Skincare-Collection-page_3.jpg">
+                </div>
+            </div>
+           
+            
+            <div class="a_2" onclick="myItem()">
+              <div class="a_p2">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623136708385-Summer-Blue-Open.jpeg">
+  
+                  <a onclick="manishLacquer()" style="cursor: pointer;">
+                  <p class="bold">Manish Malhotra Gel Finish Nail Lacquer - Summer Blue</p>
+                  <p >Hi-Shine Gel Finish Nail Enamel</p>
+                  <p class="bold">₹295</p>
+                  </a>
+              </div>
+              
+              <div class="a_p2">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623251119650--0011-Black-Diamond-Product-Swatch-1.jpeg">
+  
+                  <a href="">
+                      <p class="bold">Manish Malhotra Precision Liquid Felt Eyeliner</p>
+                      <p>Intense Longwear Liquid Eyeliner Pen</p>
+                      <p class="bold">₹895</p>
+                      </a>
+              </div>
+              
+              <div class="a_p2">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623084711945-MM-Hand-Rub-1.jpeg">
+  
+                  <a href="">
+                      
+                      <p class="bold">Manish Malhotra Antimicrobial Sanitizing Hand Rub 100 ml</p>
+                      <p>Oud Oil Nourishing Hand Sanitizer</p>
+                      <p class="bold">₹199</p>
+                      </a>
+              </div>
+              <div class="a_p2">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623084396254-TULSI-CLEANSING-FOAM-GEL-1200.jpeg">
+  
+                  <a href="">
+                    <p class="bold">Manish Malhotra Tulsi Cleansing Foam Gel</p>
+                    <p >Gel-based Natural Foaming Cleanser</p>
+                      <p class="bold">₹895</p>
+                      </a>
+              </div>
+              <div class="a_p2">
+                  <img src = "https://files.myglamm.com/site-images/400x400/Smokey-Diamond_1.jpg">
+  
+                  <a href="">
+                    <p class="bold">Manish Malhotra 24H Kajal Eyeliner - Smokey Diamond</p>
+                    <p >Multitasking, Long-wearing Retractable Kajal Pencil | Made in Germany</p>
+                      <p class="bold">₹850</p>
+                      </a>
+              </div>
+              
+          </div>
+          </div>
+  
+  
+  
+        <center><h1>POSE COLLECTION</h1></center>
+  
+         <div class="a_main a_margin">
+            <div class="a_button1">
+                
+                <button style="margin-left: 8px; " onclick="a_left1()">◀</button>
+                <button style=" margin-left: 8px; " onclick="a_right1()">▶	</button>
+                  
+            </div>
+            <div class="a_1">
+                <div class="a_p1"><img src = "https://files.myglamm.com/site-images/600x600/pose-collectionpage.jpeg">
+                </div>
+            </div>
+           
+            <div class="a_2">
+              <div class="a_p21">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623084246587-pose-hd-highlighter-duo-2.jpeg">
+  
+                  <a href="">
+                    <p class="bold">POSE HD Foundation Stick - Golden Honey</p>
+                    <p >Nourishing, Matte, Skin-blurring Foundation</p>
+                  <p class="bold">₹599</p>
+                  </a>
+              </div>
+              
+              <div class="a_p21">
+                <img src = "https://files.myglamm.com/site-images/400x400/0001-merlot-1.jpeg">
+  
+                <a onclick="poseHd()"  style="cursor: pointer;">
+                  <p class="bold">POSE HD Blush Duo - Coral | Punch</p>
+                  <p >HD Soft Focus Blush</p>
+                    <p class="bold">₹699</p>
+                    </a>
+            </div>
+  
+              <div class="a_p21">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623084178286-pose-hd-banana-powder-2.jpeg">
+  
+                  <a href="">
+                    <p class="bold">POSE HD Highlighter Duo - Champagne | Rose Gold</p>
+                    <p >HD Ultra Shimmer Highlighter</p>
+                      <p class="bold">₹699</p>
+                      </a>
+              </div>
+              
+              <div class="a_p21">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623084142353-a46a2580-1.jpeg">
+  
+                  <a href="">
+                    <p class="bold">POSE HD Banana Powder - Yellow</p>
+                    <p class="productSubtitle">HD Yellow Setting Powder</p>
+                      <p class="bold">₹699</p>
+                      </a>
+              </div>
+              
+              <div class="a_p21">
+                  <img src = "https://files.myglamm.com/site-images/400x400/Golden-Honey.jpg">
+  
+                  <a href="">
+                    <p class="bold">POSE HD Lipstick - Merlot</p>
+                      <p >HD Long-wear Matte Lipstick</p>
+                      <p class="bold">₹599</p>
+                  </a>
+              </div>
+              
+          </div>
+          </div>
+            
+  
+        <center><h1>K.PLAY COLLECTION</h1></center>
+  
+         <div class="a_main a_margin">
+            <div class="a_button2">
+                
+                <button style="margin-left: 8px; " onclick="a_left2()">◀</button>
+                <button style=" margin-left: 8px; " onclick="a_right2()">▶</button>
+                  
+            </div>
+            <div class="a_1">
+                <div class="a_p1"><img src = "https://files.myglamm.com/site-images/600x600/kplay-collection-pg-banner.jpeg">
+                </div>
+            </div>
+           
+            
+            <div class="a_2">
+                  
+              <div class="a_p22">
+                  <img src = "https://files.myglamm.com/site-images/400x400/vanilla-compact-1-1.jpeg">
+  
+                  <a href="">
+                    <p class="bold">K.Play Flavoured Compact</p>
+                    <p >Vanilla Flavoured Skin Perfecting Powder Compact</p>
+                  <p class="bold">₹645</p>
+                  </a>
+              </div>
+              
+              <div class="a_p22">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623083658255--0009-03-raspberry-punch-2.jpeg">
+  
+                  <a href="">
+                      <p class="bold">K.Play Flavoured Lipgloss - Raspberry Punch</p>
+                      <p>Raspberry Flavoured Vitamin E Enriched High Shine Lipgloss</p>
+                      <p class="bold">₹595</p>
+                      </a>
+              </div>
+              
+              <div class="a_p22">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623083218517-11-pink-guava-smash-1.jpeg">
+  
+                  <a href="">
+                      <p class="bold">K.Play Flavoured Lipstick - Pink Guava Smash</p>
+                      <p>Pink Guava Flavoured Vitamin E-enriched Creamy Lipstick</p>
+                      <p class="bold">₹545</p>
+                      </a>
+              </div>
+              <div class="a_p22">
+                  <img src = "https://files.myglamm.com/site-images/400x400/1623083053830-peach-blush-2.jpeg">
+  
+                  <a href="">
+                      <p class="bold">K.Play Flavoured Blush - Sweet Peach</p>
+                      <p>Peach Flavoured Matte Colour-rich Blush</p>
+                      <p class="bold">₹645</p>
+                      </a>
+              </div>
+              <div class="a_p22">
+                  <img src = "https://files.myglamm.com/site-images/400x400/berry-sheet-mask.jpeg">
+  
+                  <a href="">
+                      <p class="bold">K.Play Acai Berry Anti-Oxidant Sheet Mask</p>
+                      <p>Acai Berry-infused Anti-oxidant Sheet Mask</p>
+                      <p class="bold">₹145</p>
+                      </a>
+              </div>
+              
+          </div>
+        </div>
+          
+  
+      
+        <div class="a_refer a_margin">
+          <img src="https://files.myglamm.com/site-images/original/banner2.jpg">
+
+          <a href="https://www.myglamm.com/refer?icid=home_homepage_multimedia-carousel-6_refer%20and%20earn_20_refer%20and%20earn_1">    
+          </a>
+      </div>
+      
+      <center>
+          <div class="video a_margin">
+              <iframe autoplay="true" 
+                  src="https://www.youtube.com/embed/uX6nekIw3ig?autoplay=1&mute=1&loop=1" allow="autoplay;mute;loop;" mute=1>
+              </iframe>
+
+              <div class="video_info" >
+                  <h2 style="color: white; font-size: 50px; text-align: center;">BRAND STORY</h2>
+                  <p style="color: white; text-align: center; margin-top: -10px;">Backed by one of Europe's largest natural beauty companies, MyGlamm collaborated with global experts and makeup artists to bring about exciting innovation in makeup to accomplish our single, focused goal – make looking glamorous effortless!</p>
+                  <i class="far fa-play-circle" onclick="modal()" style="color:white; font-size: 100px; font-weight: 700; "></i>
+              </div>
+          </div>
+          
+      </center>     
+      <br>
+      <br>
+      <br>
+      
+      <div class="chatBox" style="z-index:10" onclick="chatbox()">
+          <img src="https://cdn.yellowmessenger.com/xEiulUijEbNF1622637959504.png">
+      </div>
+  <br>
+  <br>
+  <footer>
+    <hr>
+    <br>
+    <br>
+    <div id="footer" style="margin-top: -4%;">
+      <ul>
+        <li><h6>Bath &amp; Body</h6></li>
+        <li>
+          <a href="/buy/bath-and-body/body/face-washes">Face Washes</a>
+        </li>
+        <li>
+          <a href="/buy/bath-and-body/body/shower-gels">Shower Gels</a>
+        </li>
+        <li>
+          <a href="/buy/bath-and-body/body/body-moisturizers"
+            >Body Moisurizers</a
+          >
+        </li>
+        <li><a href="/buy/bath-and-body/body/soaps">Soaps</a></li>
+        <li><a href="/buy/bath-and-body/body/hand-care">Hand Care</a></li>
+        <li><a href="/buy/bath-and-body/body/foot-care">Foot Care</a></li>
+        <li>
+          <a href="/buy/makeup/bath-and-body/sanitizing-kits"
+            >Sanitizing Kits</a
+          >
+        </li>
+        <li>
+          <a href="/buy/bath-and-body/body-care/body-spray-and-mists"
+            >Body Spray &amp; Mists</a
+          >
+        </li>
+      </ul>
+      <ul>
+        <li><h6>Sanitizing Care</h6></li>
+        <li>
+          <a href="/buy/sanitizing-care/sanitizers/sanitizing-wipes"
+            >Sanitizing Wipes</a
+          >
+        </li>
+        <li>
+          <a href="/buy/sanitizing-care/body/face-washes">Face Washes</a>
+        </li>
+        <li>
+          <a href="/buy/sanitizing-care/body/shower-gels">Shower Gels</a>
+        </li>
+        <li>
+          <a href="/buy/sanitizing-care/body/body-moisturizers"
+            >Body Moisturizers</a
+          >
+        </li>
+        <li><a href="/buy/sanitizing-care/body/soaps">Soaps</a></li>
+        <li><a href="/buy/sanitizing-care/body/hand-care">Hand Care</a></li>
+        <li><a href="/buy/sanitizing-care/body/foot-care">Foot Care</a></li>
+        <li>
+          <a href="/buy/sanitizing-care/sanitizers/surface-spray"
+            >Surface Spray</a
+          >
+        </li>
+        <li>
+          <a href="/buy/sanitizing-care/kits/sanitizing-kits"
+            >Sanitizing Kits</a
+          >
+        </li>
+        <li>
+          <a href="/buy/sanitizing-care/body-care/body-spray-and-mists"
+            >Body Spray &amp; Mists</a
+          >
+        </li>
+        <li>
+          <a href="/buy/sanitizing-care/sanitizers/sanitizing-spray"
+            >Sanitizing Spray</a
+          >
+        </li>
+        <li>
+          <a href="/buy/sanitizing-care/sanitizers/hand-sanitizer"
+            >Hand Sanitizer</a
+          >
+        </li>
+      </ul>
+      <ul>
+        <li><h6>Skincare</h6></li>
+        <li>
+          <a href="/buy/skincare/cleansers/face-cleanser">Face Cleanser</a>
+        </li>
+        <li><a href="/buy/skincare/cleanser">Cleanser</a></li>
+        <li><a href="/buy/skincare/cleansers/toner">Toner</a></li>
+        <li>
+          <a href="/buy/skincare/moisturiser/moisturising-cream"
+            >Moisturising Cream</a
+          >
+        </li>
+        <li><a href="/buy/skincare/moisturiser">Moisturiser</a></li>
+        <li><a href="/buy/skincare/cleanser/face-wash">Face Wash</a></li>
+        <li>
+          <a href="/buy/skincare/moisturizer/body-lotion">Body Lotion</a>
+        </li>
+        <li><a href="/buy/skincare/mask/sheet-mask">Sheet Mask</a></li>
+        <li>
+          <a href="/buy/skincare/lip-treatment/lip-balms-and-treatments"
+            >Lip Balms &amp; Treatment</a
+          >
+        </li>
+        <li><a href="/buy/skincare/eye-care/eye-cream">Eye Cream</a></li>
+        <li>
+          <a href="/buy/skincare/sun-care/face-sunscreen">Face Sunscreen</a>
+        </li>
+        <li>
+          <a href="/buy/skincare/cleanser/exfoliators-and-scrubs"
+            >Exfoliators &amp; Scrub</a
+          >
+        </li>
+        <li><a href="/buy/skincare/masks/face-masks">Face Masks</a></li>
+        <li>
+          <a href="/buy/skincare/moisturizer/moisturising-gel"
+            >Moisturising Gel</a
+          >
+        </li>
+        <li>
+          <a href="/buy/skincare/moisturiser/night-cream">Night Cream</a>
+        </li>
+        <li><a href="/buy/skincare/treatment/essence">Essence</a></li>
+      </ul>
+      <ul>
+        <li><h6>Face</h6></li>
+        <li><a href="/buy/makeup/face/face-sets">Face Sets</a></li>
+        <li><a href="/buy/makeup/face/fixing-powder">Fixing Powder</a></li>
+        <li><a href="/buy/makeup/face/primer">Primer</a></li>
+        <li><a href="/buy/makeup/face/concealer">Concealer</a></li>
+        <li><a href="/buy/makeup/face/foundation">Foundation</a></li>
+        <li><a href="/buy/makeup/face/compact">Compact</a></li>
+        <li>
+          <a href="/buy/makeup/face/setting-powder">Setting Powder</a>
+        </li>
+        <li><a href="/buy/makeup/face/banana-powder">Banana Powder</a></li>
+        <li><a href="/buy/makeup/face/highlighter">Highlighter</a></li>
+        <li><a href="/buy/makeup/face/blush">Blush</a></li>
+        <li><a href="/buy/makeup/face/bronzer">Bronzer</a></li>
+        <li><a href="/buy/makeup/face/cheek-stain">Cheek Stain</a></li>
+        <li><a href="/buy/makeup/face/face-chalks">Face Chalks</a></li>
+        <li><a href="/buy/makeup/face/sheet-mask">Sheet Masks</a></li>
+      </ul>
+      <ul>
+        <li><h6>Eyes</h6></li>
+        <li><a href="/buy/makeup/eyes/eyeshadow">Eye Shadow</a></li>
+        <li><a href="/buy/makeup/eyes/eyeliner">Eyeliner</a></li>
+        <li><a href="/buy/makeup/eyes/eyebrow">Eyebrows</a></li>
+        <li><a href="/buy/makeup/eyes/glitter">Eye Sparkle</a></li>
+        <li><a href="/buy/makeup/eyes/chalks">Eye Chalks</a></li>
+        <li><a href="/buy/makeup/eyes/mascara">Mascara</a></li>
+        <li><a href="/buy/makeup/eyes/kajal">Kajal</a></li>
+      </ul>
+      <ul>
+        <li><h6>Lips</h6></li>
+        <li><a href="/buy/makeup/lips/lipstick">Lipstick</a></li>
+        <li>
+          <a href="/buy/makeup/lips/matte-lipstick">Matte Lipstick</a>
+        </li>
+        <li>
+          <a href="/buy/makeup/lips/metallic-lipstick">Metallic Lipstick</a>
+        </li>
+        <li>
+          <a href="/buy/makeup/lips/hi-shine-lipstick">Hi-Shine Lipstick</a>
+        </li>
+        <li>
+          <a href="/buy/makeup/lips/liquid-lipstick">Liquid Lipstick</a>
+        </li>
+        <li><a href="/buy/makeup/lips/lip-gloss">Lip Gloss</a></li>
+        <li>
+          <a href="/buy/makeup/lips/hi-shine-lipgloss">Hi-Shine Lipgloss</a>
+        </li>
+        <li><a href="/buy/makeup/lips/lip-liner">Lipliners</a></li>
+        <li><a href="/buy/makeup/lips/lip-balm">Lip Care</a></li>
+        <li><a href="/buy/makeup/lips/glitter">Lip Sparkle</a></li>
+        <li><a href="/buy/makeup/lips/lip-stain">Lip Stain</a></li>
+        <li><a href="/buy/makeup/lips/lip-chalks">Lip Chalks</a></li>
+        <li><a href="/shade-finder">Find Your Lipstick</a></li>
+      </ul>
+      <ul>
+        <li><h6>Nails</h6></li>
+        <li><a href="/buy/makeup/nails/nail-polish">Nail Polish</a></li>
+        <li>
+          <a href="/buy/makeup/nails/matte-nail-polish">Matte Nail Polish</a>
+        </li>
+        <li>
+          <a href="/buy/makeup/nails/matte-nail-enamel">Matte Nail Enamel</a>
+        </li>
+        <li>
+          <a href="/buy/makeup/nails/glossy-nail-enamel"
+            >Glossy Nail Enamel</a
+          >
+        </li>
+        <li><a href="/buy/makeup/nails/nail-lacquer">Nail Lacquer</a></li>
+      </ul>
+      <ul>
+        <li><h6>myglammSTUDIO</h6></li>
+        <li><a href="/glammstudio/style/">Style</a></li>
+        <li><a href="/glammstudio/lifestyle/">Lifestyle</a></li>
+        <li><a href="/glammstudio/trends/">Trends </a></li>
+        <li><a href="/glammstudio/tips/">Tips</a></li>
+        <li><a href="/glammstudio/beauty/">Beauty</a></li>
+        <li><a href="/glammstudio/tutorials/">Tutorials</a></li>
+      </ul>
+      <ul>
+        <li><h6>Know More</h6></li>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/offers">Exclusive Offers</a></li>
+        <li><a href="/refer">Refer &amp; Earn</a></li>
+        <li><a href="/online-parties/">myglammPARTIES</a></li>
+        <li><a href="/store-locator">Store Locator</a></li>
+        <li><a href="/press">Press &amp; Media</a></li>
+        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/policies">Privacy Policy</a></li>
+        <li>
+          <a href="/shipping-and-delivery-policy"
+            >Shipping and Delivery policy</a
+          >
+        </li>
+        <li>
+          <a href="/returns-and-replacements">Returns and Replacements</a>
+        </li>
+        <li><a href="/about-rewards">MyGlamm Rewards</a></li>
+        <li><a href="/site-map">Sitemap</a></li>
+      </ul>
+    </div>
+    <div id="footerBottom">
+      <div id="sect1">
+        <form action="">
+          <label for="">SUBSCRIBE FOR MYGLAMM EMAILS</label>
+          <br />
+          <input type="text" placeholder="Please enter valid email ID" />
+          <button>SUBSCRIBE NOW</button>
+        </form>
+      </div>
+      <div id="sect2">
+        <label for="">EXPERIENCE THE MYGLAMM MOBILE APP</label>
+        <br />
+        <a href="">
+          <img src="https://www.myglamm.com/images/iosStore.png" alt="" id="img1"/>
+        </a>
+        <a href="">
+          <img
+            src="https://www.myglamm.com/images/playStore.png"
+            alt=""
+            id="img2"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
+    </div>
+  </body>
+</html>
+<script>
+  var count = 1;
+  setInterval(function () {
+    document.getElementById("radio" + count).checked = true;
+    document.querySelector(".auto-btn" + count).style.background =
+      "rgb(255,151,151)";
+    if (count > 1 && count < 9) {
+      document.querySelector(".auto-btn" + (count - 1)).style.background = "";
+    }
+
+    count++;
+    if (count > 8) {
+      document.querySelector(".auto-btn" + (count - 1)).style.background = "";
+      count = 1;
+    }
+  }, 5000);
+
+  //Manual Carousel Button Functionality
+  var firstdiv1 = document.querySelectorAll(".content");
+  var button2 = document.querySelector("#button2");
+  button2.addEventListener("click", right);
+  var i = 0;
+  function right() {
+    console.log("i am working");
+    i++;
+    console.log(i);
+    for (var l of firstdiv1) {
+      console.log(l);
+      if (i == 0) {
+        l.style.left = "0%";
+      }
+      if (i == 1) {
+        l.style.left = "-11.11%";
+      }
+      if (i == 2) {
+        l.style.left = "-22.22%";
+      }
+      if (i == 3) {
+        l.style.left = "-33.33%";
+      }
+      if (i == 4) {
+        l.style.left = "-44.44%";
+      }
+      if (i == 5) {
+        l.style.left = "-55.55%";
+      }
+      if (i > 5) {
+        i = 5;
+      }
+    }
+  }
+  var button1 = document.querySelector("#button1");
+  button1.addEventListener("click", left);
+  function left() {
+    console.log("i am working");
+    i--;
+    console.log(i);
+    for (var l of firstdiv1) {
+      console.log(l);
+      if (i == 0) {
+        l.style.left = "0%";
+      }
+      if (i == 1) {
+        l.style.left = "-11.11%";
+      }
+      if (i == 2) {
+        l.style.left = "-22.22%";
+      }
+      if (i == 3) {
+        l.style.left = "-33.33%";
+      }
+      if (i == 4) {
+        l.style.left = "-44.44%";
+      }
+      if (i == 5) {
+        l.style.left = "-55.55";
+      }
+      if (i < 0) {
+        i = 0;
+      }
+    }
+  }
+  var ncount = 0;
+  var ntemp = 0;
+  function moveLeft() {
+    var div = document.getElementsByClassName("nlooks");
+    for (var i = 0; i < div.length; i++) {
+      div[i].style.transform = `translateX(0)`;
+      ntemp = 0;
+    }
+  }
+  function moveRight() {
+    ntemp++;
+    var div = document.getElementsByClassName("nlooks");
+    for (var i = 0; i < div.length; i++) {
+      var res = (ntemp % (div.length - 3)) * 18.6;
+      div[i].style.transform = `translateX(-${res}rem)`;
+    }
+  }
+  function videoLeft() {
+    var div = document.getElementsByClassName("nvideo");
+    for (var i = 0; i < div.length; i++) {
+      div[i].style.transform = `translateX(0)`;
+      ncount = 0;
+    }
+  }
+  function videoRight() {
+    ncount++;
+    var div = document.getElementsByClassName("nvideo");
+    for (var i = 0; i < div.length; i++) {
+      var res = (ncount % (div.length - 2)) * 25;
+      div[i].style.transform = `translateX(-${res}rem)`;
+    }
+  }
+  function playvid() {
+    var target = document.getElementById("vidhome");
+    target.removeAttribute("class");
+  }
+  function removevid() {
+    var target = document.getElementById("vidhome");
+    target.setAttribute("class", "display");
+  }
+
+    var a=0;
+    function a_right() {
+        var firstdiv = document.querySelectorAll('.a_p2');
+    
+        console.log('i am working')
+        a++;
+        console.log(a)
+   for(var l of firstdiv){
+      console.log(l)
+        if(a==0){l.style.left = "0%";}
+        if(a==1){l.style.left = "-33.23%";}
+        if(a==2){l.style.left = "-66.46%";}
+        if(a>2){a=2;}
+    }
+    }
+
+    function a_left() {
+        var firstdiv = document.querySelectorAll('.a_p2');
+    
+        console.log('i am working')
+        a--;
+        console.log(a)
+   for(var l of firstdiv){
+      console.log(l)
+        if(a==0){l.style.left = "0%";}
+        if(a==1){l.style.left = "-33.23%";}
+        if(a==2){l.style.left = "-66.46%";}
+        if(a<0){a=0;}
+    }
+    }
+
+
+    var j=0;
+    function a_right1() {
+        var firstdiv2 = document.querySelectorAll('.a_p21');
+    
+        console.log('i am working')
+        j++;
+        console.log(j)
+   for(var l of firstdiv2){
+      console.log(l)
+        if(j==0){l.style.left = "0%";}
+        if(j==1){l.style.left = "-33.23%";}
+        if(j==2){l.style.left = "-66.46%";}
+        if(j>2){j=2;}
+    }
+    }
+
+    function a_left1() {
+        var firstdiv2 = document.querySelectorAll('.a_p21');
+    
+        console.log('i am working')
+        j--;
+        console.log(j)
+   for(var l of firstdiv2){
+      console.log(l)
+        if(j==0){l.style.left = "0%";}
+        if(j==1){l.style.left = "-33.23%";}
+        if(j==2){l.style.left = "-66.46%";}
+        if(j<0){j=0;}
+    }
+    }
+
+
+    var k=0;
+    function a_right2() {
+        var firstdiv2 = document.querySelectorAll('.a_p22');
+    
+        console.log('i am working')
+        k++;
+        console.log(k)
+   for(var l of firstdiv2){
+      console.log(l)
+        if(k==0){l.style.left = "0%";}
+        if(k==1){l.style.left = "-33.23%";}
+        if(k==2){l.style.left = "-66.46%";}
+        if(k>2){k=2;}
+    }
+    }
+
+    function a_left2() {
+        var firstdiv2 = document.querySelectorAll('.a_p22');
+    
+        console.log('i am working')
+        k--;
+        console.log(k)
+   for(var l of firstdiv2){
+      console.log(l)
+        if(k==0){l.style.left = "0%";}
+        if(k==1){l.style.left = "-33.23%";}
+        if(k==2){l.style.left = "-66.46%";}
+        if(k<0){k=0;}
+    }
+    }
+
+    function manishLacquer(){
+      window.location.href = "\manishNailLacquer.html"
+   }
+   function poseHd(){
+      window.location.href = "\poseHdLipstick.html"
+   }
+</script>

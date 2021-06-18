@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BagMyGlemm</title>
+    <style>
+         body {
+        margin: 0;
+        padding: 0;
+        background: rgb(244, 244, 244);
+      
+      }
+      /* Header Start*/
+      .th1section {
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+      }
+      .th1outter {
+        width: 100%;
+        height: 7.6vh;
+        background: rgb(255, 207, 215);
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .th1inner1 {
+        width: 40%;
+        height: 7vh;
+        position: absolute;
+        top: 0.3vh;
+        left: 80px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .th1inner1 > a > img {
+        height: 7vh;
+      }
+      .th1inner1 > a > img:hover{
+            height: 7.2vh;
+        }
+      .th1inner2 > a > img {
+        height: 7vh;
+      }
+      .th1inner2 > a > img:hover{
+            height: 7.2vh;
+        }
+      .th1inner1 a {
+        text-decoration: none;
+        min-width: 26%;
+      }
+      .th1inner1 a p {
+        color: black;
+        margin: 2vh;
+        font-size: 100%;
+      }
+      .th1inner1 a h3 {
+        color: rgb(253, 148, 166);
+        margin: 2vh;
+      }
+      .th1inner2 {
+        width: 15%;
+        height: 7vh;
+        position: absolute;
+        top: 0.3vh;
+        right: 80px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .th1inner2 a {
+        text-decoration: none;
+        min-width: 25%;
+      }
+      .th1inner2 a p {
+        color: black;
+        margin: 2vh;
+        font-size: 100%;
+      }
+
+      /* Second Head Section Start*/
+      .th2section {
+        width: 100%;
+        position: fixed;
+        z-index: 4;
+        top: 7.6vh;
+        background: white;
+      }
+      .th2outter {
+        width: 80%;
+        margin: auto;
+      }
+      .th2inner {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+      }
+
+      .th2inner1 {
+        width: 30%;
+        height: 10vh;
+        text-align: right;
+      }
+      .th2inner1 a img {
+        height: 8vh;
+        margin: 1vh;
+      }
+      .th2inner2 {
+        width: 40%;
+      }
+      .th2inner2 span img {
+        height: 4vh;
+        margin: 2vh 0;
+        padding: 1.13vh;
+        background: rgb(244, 244, 244);
+      }
+      .th2inner2 span input {
+        width: 25%;
+        height: 6vh;
+        margin: 2vh 0;
+        position: absolute;
+        border: none;
+        outline: none;
+        background: rgb(244, 244, 244);
+      }
+      .th2inner2 span input:click {
+        border: none;
+      }
+      .reffer {
+        width: 10%;
+        text-align: center;
+        margin: auto;
+      }
+      .reffer a .reffer1 {
+        width: 100%;
+        height: fit-content;
+        margin-top: 1%;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 5vh;
+        color: black;
+      }
+      .reffer a .reffer1:hover {
+        background: black;
+        color: white;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      .th2inner4 {
+        width: 10%;
+      }
+      .th2inner4 a img {
+        height: 4vh;
+        margin: 3vh;
+      }
+      .th2inner4 a img:hover {
+        height: 4.5vh;
+        cursor: pointer;
+      }
+      .th2inner5 {
+        width: 10%;
+      }
+      .th2inner5 a img {
+        width: 4vh;
+        margin: 3vh;
+        cursor: pointer;
+      }
+      .th2inner5 a img:hover {
+        width: 4.5vh;
+      }
+      .th3section {
+        width: 100%;
+        position: fixed;
+        z-index: 4;
+        top: 17.6vh;
+        background: white;
+      }
+      .th3outter {
+        width: 80%;
+        margin: auto;
+      }
+      .th3inner {
+        width: 100%;
+        height: 6vh;
+        display: flex;
+      }
+      .th3inner1 {
+        width: 16.67%;
+        text-align: center;
+      }
+      .th3inner div:hover {
+        cursor: pointer;
+      }
+      .th3inner1 h4 {
+        font-size:80%;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+        margin-top: 1.5vh;
+      }
+      .th31outter{
+            position: fixed;
+            top: 23.6vh;
+            left: 13%;
+            width:80%;
+            margin:auto;
+            display:grid;
+            grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+            background:rgba(255,255,255,0.5);
+            text-align: left;
+        }
+        .th31inner a h1{
+            font-size:90%;
+        }
+        .th31outter{
+          display:none;
+        }
+        .shop:hover .th31outter{
+            display:grid;
+            grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+            background:rgb(255,255,255);
+            padding: 2%;
+            box-shadow: 0 0 1px black;
+    
+        }
+
+        .th31inner a h1:hover{
+            font-size:93%;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .th31inner a p:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .th3inner1 h4:hover{
+           font-size:90%;
+           text-decoration: overline;
+           cursor: pointer;
+        }
+        .threwardo{
+           position:fixed;
+           top:19.5vh;
+           width:24%;
+           text-align:left;
+           padding:2%;
+           margin-left:1.3%;
+        }
+        .threwardi{
+            display: none;
+        }
+        .threwardi a p{
+            color:black;
+        }
+        .threwardi a p:hover{
+            text-decoration:underline;
+        }
+        .rewards:hover .threwardi{
+            display: block;
+            background:rgb(255,255,255);
+            padding: 10%;
+            box-shadow: 0 0 1px black;
+    
+    
+        }
+        .thexperto{
+          position: fixed;
+          top:19.5vh;
+          width:20%;
+           text-align:left;
+           padding:2%;
+           margin-left:2%;
+        }
+        .thexperti{
+            display: none;
+        }
+        .thexperti a p{
+            color:black;
+        }
+        .thexperti a p:hover{
+            text-decoration:underline;
+        }
+        .expert:hover .thexperti{
+            display: block;
+            background:rgb(255,255,255);
+            padding: 10%;
+            box-shadow: 0 0 1px black;
+
+        }
+        .thstudioo{
+          position:fixed;
+          top:19.5vh;
+          width:20%;
+           text-align:left;
+           padding:2%;
+           margin-left: -1.5%;
+        }
+        .thstudioi{
+            display: none;
+        }
+        .thstudioi a p{
+            color:black;
+        }
+        .studio:hover .thstudioi{
+            display: block;
+            background:rgb(255,255,255);
+            padding: 10%;
+            box-shadow: 0 0 1px black;
+        }
+         .thstudioi a p:hover{
+            text-decoration:underline;
+        }
+        .thoffero{
+          position: fixed;
+          top:19.5vh;
+          width:20%;
+           text-align:left;
+           padding:2%;
+           margin-left: 2%;
+        }
+        .thofferi{
+            display: none;
+        }
+        .thofferi a p{
+            color:black;
+        }
+        .offer:hover .thofferi{
+            display: block;
+            background:rgb(255,255,255);
+            padding: 10%;
+            box-shadow: 0 0 1px black;
+    
+        }
+      
+         .thofferi a p:hover{
+            text-decoration:underline;
+        }
+        .studio:hover,.offer:hover,.rewards:hover,.expert:hover,.offer:hover{
+          text-decoration: overline;
+        }
+        .myglemmbag{
+            position:relative;
+            top:25vh;
+        }
+
+        .innercontainer{
+            width:60%;
+            margin: auto;
+            display: grid;
+            grid-gap:2%;
+            grid-template-columns: 49% 49%;
+        }
+
+        .small1 > h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: auto auto 1.5rem;
+            padding: 0 5px;
+            font-size: 18px;
+            width: max-content;
+        }
+       .outter {
+           width: 60%;
+           margin: auto;
+           Display:grid;
+           grid-gap:8%;
+           grid-template-columns: 32% 32% 32%;
+       }
+       .maindom{
+           box-shadow: 0 0 3px black;
+           background: white;
+       }
+       .imgdiv{
+           text-align: center;  
+       }
+       .imgdiv img:hover{
+           width:100%;
+       }
+       .imgdiv img{
+         height: 25vh;
+         width: 95%;
+         transition: all 0.5s linear;
+       }
+       .descdiv h3{
+         margin:4%;
+         font-size: 98%;
+       }
+       .descdiv h2{
+         margin:4%;
+         font-size:98%;
+       }
+       .descdiv{
+          height:20vh;
+           padding:3%;
+           text-align:center;
+       }
+       .descdiv .desc{
+           color:grey;
+       }
+       .small1{
+         margin-top:6.5%
+       }
+       .small2{
+           text-align:center
+       }
+       .small2 input{
+           width:50%;
+           margin: 2%;
+           padding:2%;
+           font-size:11px;
+       }
+       .big1,.big2{
+           box-shadow: 0 0 3px black;
+           background:white;
+       }
+       .small2 button{
+         width:55%;
+         margin:2%;
+         padding:2%;
+         font-size:12px;
+         background:black;
+         color:white; 
+         cursor:pointer;
+       }
+
+       footer {
+      position: relative; /* Important */
+      top: 250px;
+      background-color: white;
+      padding: 3rem 0px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      /* z-index: 3; */
+    }
+    #footer {
+      display: flex;
+      padding: 0px 12vw;
+      text-transform: uppercase;
+      font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+        sans-serif;
+        /* z-index: 1; */
+    }
+    #footer > ul {
+      padding: 0px 30px 0px 0px;
+      list-style-type: none;
+      color: #818181;
+    }
+    #footer h6 {
+      font-size: 1rem;
+    }
+    #footer > ul > li a {
+      text-decoration: none;
+      color: black;
+      text-transform: none;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 0.87rem;
+    }
+    #footer li {
+      margin-top: 0.37rem;
+      line-height: 1.2;
+    }
+    #footerBottom {
+      display: flex;
+      padding: 0px 12vw;
+      margin-top: 2.3rem;
+      position: relative;
+    }
+    footer button {
+      height: 2.3rem;
+      color: white;
+      background-color: black;
+      border: none;
+      font-size: 0.9rem;
+      margin-left: 0px;
+      width: 10rem;
+      vertical-align: middle;
+    }
+    footer input {
+      height: 2.3rem;
+      width: 19rem;
+      margin-top: 1rem;
+    }
+    /* #sect2 label {
+        position: absolute;
+        right: 12vw;
+      } */
+    #sect2 img {
+      width: 7.5rem;
+      height: 2.5rem;
+      margin-top: 1rem;
+    }
+    #sect2 {
+      position: absolute;
+      right: 12vw;
+    }
+    #img1 {
+        float: left;
+      /* position: absolute; */
+      /* right: -80%; */
+    }
+    #img2 {
+      position: absolute;
+      right: 2px;
+    }
+    #footer > ul > li a:hover {
+      color: #d4a255;
+    }
+    </style>
+</head>
+<body>
+        <!--Header Section 1-->
+    <div>
+        <section class="th1section">
+          <div class="th1outter">
+            <div class="th1inner1">
+              <a href="">
+                <img
+                  src="https://www.pinclipart.com/picdir/big/196-1964826_free-png-open-gift-box-red-transparent-png.png"
+                  alt="photo"
+                />
+              </a>
+              <a href="">
+                <p>MyGlamm Youthfull Launch</p>
+              </a>
+              <a href="">
+                <h3>SHOP NOW</h3>
+              </a>
+            </div>
+  
+            <div class="th1inner2">
+              <a href="FinalMergeFile.html">
+                <img
+                  src="https://purepng.com/public/uploads/medium/purepng.com-small-househousebuildinghomewood-houseconcrete-house-1701528486633iru3y.png"
+                  alt="photo"
+                />
+              </a>
+              <a href="">
+                <p>MyGlamm Store</p>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+      <!--Header Section 2-->
+      <section class="th2section">
+        <div class="th2outter">
+          <div class="th2inner">
+            <div class="th2inner1">
+              <a href="">
+                <img
+                  src="	https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="th2inner2 topsearchbox">
+              <span>
+                <img
+                  src="	https://www.myglamm.com/images/search.svg"
+                  alt="search"
+                />
+              </span>
+              <span>
+                <input
+                  type="text"
+                  placeholder="Find LipStick,EyeLiner,MakeUp,etc"
+                />
+              </span>
+            </div>
+            <div class="th2inner3 reffer">
+              <a href="">
+                <div class="reffer1">
+                  <p>Refer & Earn</p>
+                </div>
+              </a>
+            </div>
+            <div class="th2inner4">
+              <a href="">
+                <img
+                  src="https://image.flaticon.com/icons/png/128/63/63356.png"
+                  alt="smallBag"
+                />
+              </a>
+            </div>
+            <div class="th2inner5">
+              <a href="signuppagemyglamm.html">
+                <img
+                  src="https://th.bing.com/th/id/Re9e626c5437637615ab40f0ccf6f722a?rik=tjUBw7pBREHJnA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_257423.png&ehk=tL787%2ba7DX2pOvcHOx0HscDJNAFcWPyX3ym6SBb%2fOR8%3d&risl=&pid=ImgRaw"
+                  alt="smallBag"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!--Header Section 3-->
+      <section class="th3section">
+        <div class="th3outter">
+            <div class="th3inner">
+                <div class="th3inner1 shop">
+                    <h4>SHOP</h4>
+                    <!--Header Section Hover Div1-->
+                    <div class="submenushop">
+                        <div class="th31outter">
+      
+      <div class="th31inner">
+              <a><h1>BATH &amp; BODY</h1></a>
+              <a><p>Face Washes</p></a>
+              <a><p>Shower Gels</p></a>
+              <a><p>Soaps</p></a>
+              <a><p>Hand Care</p></a>
+              <a><p>Foot Care</p></a>
+              <a><p>Body Moisurizers</p></a>
+      </div>
+      <div class="th31inner">
+          <a><h1>SANITIZING CARE</h1></a>
+          <a><p>Santizing Wipes</p></a>
+          <a><p>Surface Spray</p></a>
+          <a><p>Santizing Kits</p></a>
+          <a><p>Santizing Spray</p></a>
+          <a><p>Hand Santizer</p></a>
+          <a><p></p></a>
+      </div>
+      <div class="th31inner">
+          <a><h1>SKINCARE</h1></a>
+          <a><p>Face Cleanser</p></a>
+          <a><p>Cleanser</p></a>
+          <a><p>Toner</p></a>
+          <a><p>Body Lotion</p></a>
+          <a><p>Sheet Mask</p></a>
+          <a><p>Sun Screen</p></a>
+      </div>
+      <div class="th31inner">
+          <a><h1>FACE</h1></a>
+          <a><p>Face Sets</p></a>
+          <a><p>Fixing Powder</p></a>
+          <a><p>Primer</p></a>
+          <a><p>Foundation</p></a>
+          <a><p>Highlighter</p></a>
+          <a><p>Blush</p></a>
+          <a><p>Cheek Stain</p></a>
+          <a><p>Setting Powder</p></a>
+          <a><p>Bronzer</p></a>
+      </div>
+      <div class="th31inner">
+          <a><h1>EYES</h1></a>
+          <a><p>Eye Shadow</p></a>
+          <a><p>Eyeliner</p></a>
+          <a><p>Eyebrows</p></a>
+          <a><p>Eye Sparkle</p></a>
+          <a><p>Mascara</p></a>
+          <a><p>Kajal</p></a>
+      </div>
+      <div class="th31inner">
+          <a><h1>LIPS</h1></a>
+          <a href="ProductPage2.html" style="text-decoration: none; color: black"><p>Lipstick</p></a>
+          <a><p>Matte Lipstick</p></a>
+          <a><p>Metallic Lipstick</p></a>
+          <a><p>Hi-Shine Lipstick</p></a>
+          <a><p>Liquid Lipstick</p></a>
+          <a><p>Lip Gloss</p></a>
+          <a><p>Lipliners</p></a>
+          <a><p>Lip Sparkle</p></a>
+          <a><p>Lip Chalks</p></a>
+      </div>
+      <div class="th31inner">
+          <a><h1>NAILS</h1></a>
+          <a  href="ProductPage1.html" style="text-decoration: none; color: black"><p>Nail Polish</p></a>
+          <a><p>Matte Nail Polish</p></a>
+          <a><p>Matte Nail Enamel</p></a>
+          <a><p>Glossy Nail Enamel</p></a>
+          <a><p>Nail Lacquer</p></a>
+          <a><p></p></a>
+      </div>
+  
+  </div>
+                    </div>
+                </div>
+                <div class="th3inner1 offer">
+                  <h4>OFFERS</h4>
+                  <div class="thoffero">
+                      <div class="thofferi">
+                          <a href=""><p>Today's Offers</p></a>
+                          <a href=""><p>Refer Discount</p></a>
+                          <a href=""><p>Point Back Offers</p></a>
+                          <a href=""><p>Flat 15% Discount</p></a>
+                          <a href=""><p>Buy 1 Get 1 Free</p></a>
+                        </div>
+                  </div>
+              </div>
+              <div class="th3inner1 rewards">
+                  <h4>REWARDS</h4>
+                  <div class="threwardo">
+                      <div class="threwardi">
+                          <a href=""><p>Sign In/Sign Up</p></a>
+                          <a href=""><p>myGlemm INSIDER</p></a>
+                          <a href=""><p>myGlemm PARTIES</p></a>
+                          <a href=""><p>MYglemm EXPERIENCE</p></a>
+                          <a href=""><p>Brand Stories</p></a>
+                        </div>
+                  </div> 
+              </div>
+              <div class="th3inner1 expert">
+                  <h4>EXPERTS</h4>
+                  <div class="thexperto">
+                      <div class="thexperti">
+                          <a href=""><p>Daniel Bauer</p></a>
+                          <a href=""><p>Cory Walia</p></a>
+                          <a href=""><p>Influencers</p></a>
+                        </div>
+                  </div> 
+              </div>
+              <div class="th3inner1 studio">
+                  <h4>MYGLEMM STUDIO</h4>
+                  <div class="thstudioo">
+                      <div class="thstudioi">
+                          <a href=""><p>Blog</p></a>
+                          <a href=""><p>Looks</p></a>
+                          <a href=""><p>Most Sell</p></a>
+                          <a href=""><p>New Launches</p></a>
+                      </div>
+                  </div> 
+              </div>
+              <div class="th3inner1">
+                  <h4>MANISH MALHOTRA</h4>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="myglemmbag">
+        <div class="uppercontainer">
+            <div class="innercontainer">
+                <div class="big1">
+                    <div class='small1'>
+                      <h1>Bag Items Summery</h1>
+                    </div>
+                </div>
+                <div class="big2">
+                    <div class='small2'>
+                     <input type="text"  class="promo" placeholder="Apply Promo Code To get 25% Discount">
+                     <br>
+                     <button class="btn2" onclick="discount()">Click To get 25% Discount</button>
+                     <br>
+                     <button onclick="CheckOut()">Proceed To Payment</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    
+        <hr>
+        <div class="lowercontainer">
+             <div class="outter">
+                
+             </div>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <br>
+        <br>
+        <div id="footer" style="margin-top: -4%;">
+          <ul>
+            <li><h6>Bath &amp; Body</h6></li>
+            <li>
+              <a href="/buy/bath-and-body/body/face-washes">Face Washes</a>
+            </li>
+            <li>
+              <a href="/buy/bath-and-body/body/shower-gels">Shower Gels</a>
+            </li>
+            <li>
+              <a href="/buy/bath-and-body/body/body-moisturizers"
+                >Body Moisurizers</a
+              >
+            </li>
+            <li><a href="/buy/bath-and-body/body/soaps">Soaps</a></li>
+            <li><a href="/buy/bath-and-body/body/hand-care">Hand Care</a></li>
+            <li><a href="/buy/bath-and-body/body/foot-care">Foot Care</a></li>
+            <li>
+              <a href="/buy/makeup/bath-and-body/sanitizing-kits"
+                >Sanitizing Kits</a
+              >
+            </li>
+            <li>
+              <a href="/buy/bath-and-body/body-care/body-spray-and-mists"
+                >Body Spray &amp; Mists</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li><h6>Sanitizing Care</h6></li>
+            <li>
+              <a href="/buy/sanitizing-care/sanitizers/sanitizing-wipes"
+                >Sanitizing Wipes</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/body/face-washes">Face Washes</a>
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/body/shower-gels">Shower Gels</a>
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/body/body-moisturizers"
+                >Body Moisturizers</a
+              >
+            </li>
+            <li><a href="/buy/sanitizing-care/body/soaps">Soaps</a></li>
+            <li><a href="/buy/sanitizing-care/body/hand-care">Hand Care</a></li>
+            <li><a href="/buy/sanitizing-care/body/foot-care">Foot Care</a></li>
+            <li>
+              <a href="/buy/sanitizing-care/sanitizers/surface-spray"
+                >Surface Spray</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/kits/sanitizing-kits"
+                >Sanitizing Kits</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/body-care/body-spray-and-mists"
+                >Body Spray &amp; Mists</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/sanitizers/sanitizing-spray"
+                >Sanitizing Spray</a
+              >
+            </li>
+            <li>
+              <a href="/buy/sanitizing-care/sanitizers/hand-sanitizer"
+                >Hand Sanitizer</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li><h6>Skincare</h6></li>
+            <li>
+              <a href="/buy/skincare/cleansers/face-cleanser">Face Cleanser</a>
+            </li>
+            <li><a href="/buy/skincare/cleanser">Cleanser</a></li>
+            <li><a href="/buy/skincare/cleansers/toner">Toner</a></li>
+            <li>
+              <a href="/buy/skincare/moisturiser/moisturising-cream"
+                >Moisturising Cream</a
+              >
+            </li>
+            <li><a href="/buy/skincare/moisturiser">Moisturiser</a></li>
+            <li><a href="/buy/skincare/cleanser/face-wash">Face Wash</a></li>
+            <li>
+              <a href="/buy/skincare/moisturizer/body-lotion">Body Lotion</a>
+            </li>
+            <li><a href="/buy/skincare/mask/sheet-mask">Sheet Mask</a></li>
+            <li>
+              <a href="/buy/skincare/lip-treatment/lip-balms-and-treatments"
+                >Lip Balms &amp; Treatment</a
+              >
+            </li>
+            <li><a href="/buy/skincare/eye-care/eye-cream">Eye Cream</a></li>
+            <li>
+              <a href="/buy/skincare/sun-care/face-sunscreen">Face Sunscreen</a>
+            </li>
+            <li>
+              <a href="/buy/skincare/cleanser/exfoliators-and-scrubs"
+                >Exfoliators &amp; Scrub</a
+              >
+            </li>
+            <li><a href="/buy/skincare/masks/face-masks">Face Masks</a></li>
+            <li>
+              <a href="/buy/skincare/moisturizer/moisturising-gel"
+                >Moisturising Gel</a
+              >
+            </li>
+            <li>
+              <a href="/buy/skincare/moisturiser/night-cream">Night Cream</a>
+            </li>
+            <li><a href="/buy/skincare/treatment/essence">Essence</a></li>
+          </ul>
+          <ul>
+            <li><h6>Face</h6></li>
+            <li><a href="/buy/makeup/face/face-sets">Face Sets</a></li>
+            <li><a href="/buy/makeup/face/fixing-powder">Fixing Powder</a></li>
+            <li><a href="/buy/makeup/face/primer">Primer</a></li>
+            <li><a href="/buy/makeup/face/concealer">Concealer</a></li>
+            <li><a href="/buy/makeup/face/foundation">Foundation</a></li>
+            <li><a href="/buy/makeup/face/compact">Compact</a></li>
+            <li>
+              <a href="/buy/makeup/face/setting-powder">Setting Powder</a>
+            </li>
+            <li><a href="/buy/makeup/face/banana-powder">Banana Powder</a></li>
+            <li><a href="/buy/makeup/face/highlighter">Highlighter</a></li>
+            <li><a href="/buy/makeup/face/blush">Blush</a></li>
+            <li><a href="/buy/makeup/face/bronzer">Bronzer</a></li>
+            <li><a href="/buy/makeup/face/cheek-stain">Cheek Stain</a></li>
+            <li><a href="/buy/makeup/face/face-chalks">Face Chalks</a></li>
+            <li><a href="/buy/makeup/face/sheet-mask">Sheet Masks</a></li>
+          </ul>
+          <ul>
+            <li><h6>Eyes</h6></li>
+            <li><a href="/buy/makeup/eyes/eyeshadow">Eye Shadow</a></li>
+            <li><a href="/buy/makeup/eyes/eyeliner">Eyeliner</a></li>
+            <li><a href="/buy/makeup/eyes/eyebrow">Eyebrows</a></li>
+            <li><a href="/buy/makeup/eyes/glitter">Eye Sparkle</a></li>
+            <li><a href="/buy/makeup/eyes/chalks">Eye Chalks</a></li>
+            <li><a href="/buy/makeup/eyes/mascara">Mascara</a></li>
+            <li><a href="/buy/makeup/eyes/kajal">Kajal</a></li>
+          </ul>
+          <ul>
+            <li><h6>Lips</h6></li>
+            <li><a href="/buy/makeup/lips/lipstick">Lipstick</a></li>
+            <li>
+              <a href="/buy/makeup/lips/matte-lipstick">Matte Lipstick</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/lips/metallic-lipstick">Metallic Lipstick</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/lips/hi-shine-lipstick">Hi-Shine Lipstick</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/lips/liquid-lipstick">Liquid Lipstick</a>
+            </li>
+            <li><a href="/buy/makeup/lips/lip-gloss">Lip Gloss</a></li>
+            <li>
+              <a href="/buy/makeup/lips/hi-shine-lipgloss">Hi-Shine Lipgloss</a>
+            </li>
+            <li><a href="/buy/makeup/lips/lip-liner">Lipliners</a></li>
+            <li><a href="/buy/makeup/lips/lip-balm">Lip Care</a></li>
+            <li><a href="/buy/makeup/lips/glitter">Lip Sparkle</a></li>
+            <li><a href="/buy/makeup/lips/lip-stain">Lip Stain</a></li>
+            <li><a href="/buy/makeup/lips/lip-chalks">Lip Chalks</a></li>
+            <li><a href="/shade-finder">Find Your Lipstick</a></li>
+          </ul>
+          <ul>
+            <li><h6>Nails</h6></li>
+            <li><a href="/buy/makeup/nails/nail-polish">Nail Polish</a></li>
+            <li>
+              <a href="/buy/makeup/nails/matte-nail-polish">Matte Nail Polish</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/nails/matte-nail-enamel">Matte Nail Enamel</a>
+            </li>
+            <li>
+              <a href="/buy/makeup/nails/glossy-nail-enamel"
+                >Glossy Nail Enamel</a
+              >
+            </li>
+            <li><a href="/buy/makeup/nails/nail-lacquer">Nail Lacquer</a></li>
+          </ul>
+          <ul>
+            <li><h6>myglammSTUDIO</h6></li>
+            <li><a href="/glammstudio/style/">Style</a></li>
+            <li><a href="/glammstudio/lifestyle/">Lifestyle</a></li>
+            <li><a href="/glammstudio/trends/">Trends </a></li>
+            <li><a href="/glammstudio/tips/">Tips</a></li>
+            <li><a href="/glammstudio/beauty/">Beauty</a></li>
+            <li><a href="/glammstudio/tutorials/">Tutorials</a></li>
+          </ul>
+          <ul>
+            <li><h6>Know More</h6></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/offers">Exclusive Offers</a></li>
+            <li><a href="/refer">Refer &amp; Earn</a></li>
+            <li><a href="/online-parties/">myglammPARTIES</a></li>
+            <li><a href="/store-locator">Store Locator</a></li>
+            <li><a href="/press">Press &amp; Media</a></li>
+            <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+            <li><a href="/policies">Privacy Policy</a></li>
+            <li>
+              <a href="/shipping-and-delivery-policy"
+                >Shipping and Delivery policy</a
+              >
+            </li>
+            <li>
+              <a href="/returns-and-replacements">Returns and Replacements</a>
+            </li>
+            <li><a href="/about-rewards">MyGlamm Rewards</a></li>
+            <li><a href="/site-map">Sitemap</a></li>
+          </ul>
+        </div>
+        <div id="footerBottom">
+          <div id="sect1">
+            <form action="">
+              <label for="">SUBSCRIBE FOR MYGLAMM EMAILS</label>
+              <br />
+              <input type="text" placeholder="Please enter valid email ID" />
+              <button>SUBSCRIBE NOW</button>
+            </form>
+          </div>
+          <div id="sect2">
+            <label for="">EXPERIENCE THE MYGLAMM MOBILE APP</label>
+            <br />
+            <a href="">
+              <img src="https://www.myglamm.com/images/iosStore.png" alt="" id="img1"/>
+            </a>
+            <a href="">
+              <img
+                src="https://www.myglamm.com/images/playStore.png"
+                alt=""
+                id="img2"
+              />
+            </a>
+          </div>
+        </div>
+    </footer>
+   
+</body>
+</html>
+<script>
+    var arr2 = JSON.parse(localStorage.getItem('myglemmbag'));
+    console.log(arr2);
+    var summation = 0;
+    arr2.forEach(elem => {
+        let div1 = document.createElement("div");
+          let name = document.createElement("h3");
+          name.innerHTML = `${elem.Name}`;
+         // console.log(name);
+          let price = document.createElement("h2");
+          price.innerHTML = `Price: <span>&#8377;<span> ${elem.Price}`;
+           // console.log(price)
+          let img = document.createElement("img");
+          img.setAttribute("src", elem.Image);
+          //console.log(img)
+          let div2 = document.createElement("div");
+         
+          var desc = document.createElement("h3");
+          desc.innerHTML = `${elem.Description}`
+          desc.setAttribute("class",'desc');
+          //console.log(btn)
+          div1.append(img);
+        div1.setAttribute('class','imgdiv')
+         // console.log(div1)
+          div2.append(name,desc,price);
+          div2.setAttribute('class','descdiv')
+          div3 = document.createElement('div');
+          div3.append(div1,div2);
+          div3.setAttribute('class','maindom')
+          let head = document.querySelector('.outter');
+          head.append(div3);
+          summation+=Number(elem.Price);
+
+    });
+
+    var h1 = document.createElement('h1');
+          h1.innerHTML = `Total Added Products = ${arr2.length}`;
+          var h2 = document.createElement('h1');
+          h2.innerHTML = `Total Amount = <span>&#8377;<span/> ${summation}`;
+          var sum = document.querySelector('.small1');
+          sum.append(h1,h2);
+     
+          var count = 0;
+          function discount(){
+          var code = document.querySelector('.promo').value;
+     
+          if(code=='masai25' && count==0){
+              summation = Math.round(.75*summation);
+              console.log(summation);
+              h2.innerHTML = `Total Amount = <span>&#8377;<span/> ${summation}`;
+              count++;
+              document.querySelector('.promo').value = null;
+              alert('Discount Applied Successfully')
+              var total = `[
+        {
+        "price" : ${summation}
+        }
+      ]`;
+      localStorage.setItem("Price", total);
+
+          }
+          else if (code=='masai25' && count>0){
+              alert('Discount is Alredy Applied');
+              document.querySelector('.promo').value = null;
+          }
+          else{
+               alert('Please Type Valid Promo Code')
+              document.querySelector('.promo').value = null
+            }
+      }
+
+      function CheckOut(){
+         window.location.href = "payment.html";
+     }
+</script>

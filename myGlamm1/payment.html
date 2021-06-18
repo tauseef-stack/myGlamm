@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gateway</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .header {
+        width: 100vw;
+        padding: 0.4rem 14.5rem;
+        height: 4.8rem;
+        box-shadow: 1px -4px 12px 1px gray;
+      }
+      .header img {
+        max-height: 100%;
+      }
+      .header + p {
+        font-size: 2.3rem;
+        text-align: center;
+        margin-top: 3.8rem;
+      }
+      .body {
+        padding: 1.5rem 12rem;
+        display: flex;
+      }
+      .body > div {
+        display: flex;
+        flex-direction: column;
+      }
+      #method {
+        height: 20rem;
+        width: 16rem;
+      }
+      #method > h6 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 1rem;
+      }
+      #method > div {
+        width: 100%;
+        height: 20%;
+        padding: 1.2rem 0.7rem;
+        vertical-align: middle;
+        font-size: 0.9rem;
+        border: 1px solid white;
+      }
+      #method > div:hover {
+        background-color: #fcf8ed;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      #method p {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      h5 {
+        margin-bottom: 2rem;
+      }
+      #details {
+        width: 52.5rem;
+        height: 27rem;
+        margin-left: 3rem;
+      }
+      #details > div:nth-child(1) {
+        width: 100%;
+        height: 4.1rem;
+        background-color: #fcf8ed;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 1rem;
+      }
+      #details h3 {
+        display: inline;
+        font-size: 1.3rem;
+      }
+      #total {
+        margin-left: 65%;
+      }
+      /* #details > div:nth-child(2) {
+      } */
+      #details label {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      form {
+        position: relative;
+      }
+      #form div {
+        position: relative;
+        height: 5rem;
+      }
+      input {
+        margin-top: 1.2rem;
+        height: 3.8rem;
+        width: 74%;
+        background-color: rgb(243, 243, 243);
+        border: none;
+        position: absolute;
+        right: 0px;
+        margin-top: -1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+      }
+      #pay {
+        width: 14rem;
+        height: 3.5rem;
+        background-color: rgb(209, 209, 209);
+        padding: 1.2rem 2.5rem;
+      }
+      #bottom {
+        text-align: center;
+      }
+      #bottom img {
+        width: 8rem;
+        margin-top: 2rem;
+      }
+      #pay:hover {
+        cursor: pointer;
+      }
+      i {
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="">
+        <img
+          src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
+          alt=""
+        />
+      </a>
+    </div>
+    <p>Payment</p>
+    <div class="body">
+      <div id="method">
+        <h6>PAYMENT METHOD</h6>
+        <div onclick="clicked()">
+          <p><i class="fas fa-credit-card"></i> Credit or Debit Card</p>
+        </div>
+        <div>
+          <p><i class="fas fa-globe"></i> Net Banking</p>
+        </div>
+        <div>
+          <p>
+            <i class="fab fa-paypal"></i>
+            UPI/GPay/PhonePe
+          </p>
+        </div>
+        <div>
+          <p><i class="fas fa-wallet"></i> Wallets</p>
+        </div>
+        <div>
+          <p><i class="fas fa-money-bill"></i> Cash On Delivery</p>
+        </div>
+      </div>
+      <div id="details">
+        <div>
+          <h3>AMOUNT PAYABLE</h3>
+          <h3 id="total">Rs.3000.00</h3>
+        </div>
+        <br />
+        <h5>New Card</h5>
+        <div id="form">
+          <form action="">
+            <div>
+              <label for="Card">Card Number </label>
+              <input type="text" id="card" placeholder="XXXX-XXXX-XXXX-XXXX" />
+            </div>
+            <div>
+              <label for="Card Number">Cardholder's Name</label>
+              <input type="text" id="name" placeholder="eg. Jennifer Gomes" />
+            </div>
+            <div>
+              <label for="Card Number">Validity till</label>
+              <input type="text" id="validity" placeholder="MM/YY" />
+            </div>
+          </form>
+        </div>
+        <div id="pay" onclick="paym()"><h4>PROCEED TO PAY</h4></div>
+      </div>
+    </div>
+    <hr />
+    <div id="bottom">
+      <img
+        src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
+        alt=""
+      />
+    </div>
+  </body>
+  <script>
+    var div = document.getElementById("total");
+    var res = JSON.parse(localStorage.getItem("Price"));
+    console.log(res);
+    div.innerHTML = `<span>&#8377;<span/> ${res[0].price}`;
+    function clicked(e) {
+      event.currentTarget.style.border = "1px solid black";
+      event.currentTarget.style.backgroundColor = "#fcf8ed";
+    }
+
+    function paym() {
+      if (
+        document.getElementById("card").value == "" ||
+        document.getElementById("name").value == "" ||
+        document.getElementById("validity").value == ""
+      ) {
+        alert("enter valid details");
+      } else {
+        window.location.href = "success.html";
+      }
+    }
+  </script>
+</html>
