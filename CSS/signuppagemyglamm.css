@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .mainheader {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+  }
+  .th1section {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+  }
+  .th1outter {
+    width: 100%;
+    height: 7.6vh;
+    background: rgb(255, 207, 215);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .th1inner1 {
+    width: 40%;
+    height: 7vh;
+    position: absolute;
+    top: 0.3vh;
+    left: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .th1inner1 > a > img {
+    height: 7vh;
+  }
+  .th1inner1 > a > img:hover {
+    height: 7.2vh;
+  }
+  .th1inner2 > a > img {
+    height: 7vh;
+  }
+  .th1inner2 > a > img:hover {
+    height: 7.2vh;
+  }
+  .th1inner1 a {
+    text-decoration: none;
+    min-width: 26%;
+  }
+  .th1inner1 a p {
+    color: black;
+    margin: 2vh;
+    font-size: 100%;
+  }
+  .th1inner1 a h3 {
+    color: rgb(253, 148, 166);
+    margin: 2vh;
+  }
+  .th1inner2 {
+    width: 15%;
+    height: 7vh;
+    position: absolute;
+    top: 0.3vh;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .th1inner2 a {
+    text-decoration: none;
+    min-width: 25%;
+  }
+  .th1inner2 a p {
+    color: black;
+    margin: 2vh;
+    font-size: 100%;
+  }
+
+  /* Second Section Start*/
+  .th2section {
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 7.6vh;
+    background: white;
+  }
+  .th2outter {
+    width: 80%;
+    margin: auto;
+  }
+  .th2inner {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+  }
+
+  .th2inner1 {
+    width: 30%;
+    height: 10vh;
+    text-align: right;
+  }
+  .th2inner1 a img {
+    height: 8vh;
+    margin: 1vh;
+  }
+  .th2inner2 {
+    width: 40%;
+  }
+  .th2inner2 span img {
+    height: 4vh;
+    margin: 2vh 0;
+    padding: 1.1vh;
+    background: rgb(244, 244, 244);
+  }
+  .th2inner2 span input {
+    width: 25%;
+    height: 6vh;
+    margin: 2vh 0;
+    position: absolute;
+    border: none;
+    background: rgb(244, 244, 244);
+  }
+  .th2inner2 span input:click {
+    border: none;
+  }
+  .reffer {
+    width: 10%;
+    text-align: center;
+    margin: auto;
+  }
+  .reffer a .reffer1 {
+    width: 100%;
+    height: fit-content;
+    margin-top: 1%;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5vh;
+    color: black;
+  }
+  .reffer a .reffer1:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .th2inner4 {
+    width: 10%;
+  }
+  .th2inner4 a img {
+    height: 4vh;
+    margin: 3vh;
+  }
+  .th2inner4 a img:hover {
+    height: 4.5vh;
+    cursor: pointer;
+  }
+  .th2inner5 {
+    width: 10%;
+  }
+  .th2inner5 a img {
+    width: 4vh;
+    margin: 3vh;
+    cursor: pointer;
+  }
+  .th2inner5 a img:hover {
+    width: 4.5vh;
+  }
+  .th3section {
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 17.6vh;
+    background: white;
+  }
+  .th3outter {
+    width: 80%;
+    margin: auto;
+  }
+  .th3inner {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+  }
+  .th3inner1 {
+    width: 16.67%;
+    text-align: center;
+  }
+  .th3inner div:hover {
+    cursor: pointer;
+  }
+  .th3inner1 h4 {
+    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+      sans-serif;
+    font-weight: 1000;
+    margin-top: 1.5vh;
+  }
+  .th31outter {
+    position: fixed;
+    top: 23.6vh;
+    left: 13%;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: left;
+  }
+  .th31inner a h1 {
+    font-size: 90%;
+  }
+  .th31outter {
+    display: none;
+  }
+  .shop:hover .th31outter {
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+    background: rgb(255, 255, 255);
+    padding: 2%;
+    box-shadow: 0 0 1px black;
+  }
+
+  .th31inner a h1:hover {
+    font-size: 93%;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .th31inner a p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .th3inner1 h4:hover {
+    font-size: 90%;
+    text-decoration: overline;
+    cursor: pointer;
+  }
+  .threwardo {
+    position: fixed;
+    top: 19.5vh;
+    width: 24%;
+    text-align: left;
+    padding: 2%;
+    margin-left: 1.3%;
+  }
+  .threwardi {
+    display: none;
+  }
+  .threwardi a p {
+    color: black;
+  }
+  .threwardi a p:hover {
+    text-decoration: underline;
+  }
+  .rewards:hover .threwardi {
+    display: block;
+    background: rgb(255, 255, 255);
+    padding: 10%;
+    box-shadow: 0 0 1px black;
+  }
+  .thexperto {
+    position: fixed;
+    top: 19.5vh;
+    width: 20%;
+    text-align: left;
+    padding: 2%;
+    margin-left: 2%;
+  }
+  .thexperti {
+    display: none;
+  }
+  .thexperti a p {
+    color: black;
+  }
+  .thexperti a p:hover {
+    text-decoration: underline;
+  }
+  .expert:hover .thexperti {
+    display: block;
+    background: rgb(255, 255, 255);
+    padding: 10%;
+    box-shadow: 0 0 1px black;
+  }
+  .thstudioo {
+    position: fixed;
+    top: 19.5vh;
+    width: 20%;
+    text-align: left;
+    padding: 2%;
+    margin-left: -1.5%;
+  }
+  .thstudioi {
+    display: none;
+  }
+  .thstudioi a p {
+    color: black;
+  }
+  .studio:hover .thstudioi {
+    display: block;
+    background: rgb(255, 255, 255);
+    padding: 10%;
+    box-shadow: 0 0 1px black;
+  }
+  .thstudioi a p:hover {
+    text-decoration: underline;
+  }
+  .thoffero {
+    position: fixed;
+    top: 19.5vh;
+    width: 20%;
+    text-align: left;
+    padding: 2%;
+    margin-left: 2%;
+  }
+  .thofferi {
+    display: none;
+  }
+  .thofferi a p {
+    color: black;
+  }
+  .offer:hover .thofferi {
+    display: block;
+    background: rgb(255, 255, 255);
+    padding: 10%;
+    box-shadow: 0 0 1px black;
+  }
+
+  .thofferi a p:hover {
+    text-decoration: underline;
+  }
+  .studio:hover,
+  .offer:hover,
+  .rewards:hover,
+  .expert:hover,
+  .offer:hover {
+    text-decoration: overline;
+  }
+
+  /*Signup Details*/
+  .signupsection {
+    width: 100%;
+    position: relative;
+    top: 25vh;
+  }
+  #signup {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+  }
+  #signup img {
+    width: 80%;
+    height: 15vh;
+  }
+  #signup form input {
+    width: 80%;
+    margin-top: 2vh;
+    font-size: 2vh;
+    background: white;
+    padding: 2vh;
+    border-radius: 10px;
+
+    margin-bottom: 2vh;
+    color: black;
+  }
+  #signup form button {
+    width: 86%;
+    font-size: 2vh;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: solid;
+  }
+  #signup form h5 {
+    color: #818181;
+    margin: 0;
+  }
+  #signup p {
+    text-align: center;
+    font-family: cursive;
+    font-weight: 400;
+    color: black;
+    text-decoration: solid;
+  }
+  /*Footer Start*/
+  footer {
+    position: relative; /* These 2 lines are important*/
+    top: 200px;
+    background-color: white;
+    padding: 3rem 0px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  #footer {
+    display: flex;
+    padding: 0px 12vw;
+    text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #footer > ul {
+    padding: 0px 30px 0px 0px;
+    list-style-type: none;
+    color: #818181;
+  }
+  #footer h6 {
+    font-size: 1rem;
+  }
+  #footer > ul > li a {
+    text-decoration: none;
+    color: black;
+    text-transform: none;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 0.87rem;
+  }
+  #footer li {
+    margin-top: 0.37rem;
+    line-height: 1.2;
+  }
+  #footerBottom {
+    top: 700px;
+    display: flex;
+    padding: 0px 12vw;
+    margin-top: 2.3rem;
+  }
+  footer button {
+    height: 2.3rem;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 0.9rem;
+    margin-left: 0px;
+    width: 10rem;
+    vertical-align: middle;
+  }
+  footer input {
+    height: 2.3rem;
+    width: 19rem;
+    margin-top: 1rem;
+  }
+  /* #sect2 label {
+    position: absolute;
+    right: 12vw;
+  } */
+  #sect2 img {
+    width: 7.5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+  }
+  #sect2 {
+    position: absolute;
+    right: 12vw;
+  }
+  #img2 {
+    position: absolute;
+    right: 0px;
+  }
+  #footer > ul > li a:hover {
+    color: #d4a255;
+  }
