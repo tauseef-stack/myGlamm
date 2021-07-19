@@ -21,7 +21,7 @@ let data = `[
     {
         "Name": "MANISH MALHOTRA NAIL LACQUER",
         "Price": "450",
-        "Image": "https://files.myglamm.com/site-images/400x400/1623081265647-opulent-ocean-6.jpeg",
+        "Image": "https://files.myglamm.com/site-images/400x400/1623136708385-Summer-Blue-Open.jpeg",
         "Description": "Hi-Shine Gel Finish Nail Enamel | Made in Italy"
     },
     {
@@ -112,7 +112,7 @@ let soloData = `[
       {
         "Name": "MANISH MALHOTRA NAIL LACQUER",
         "Price": "450",
-        "Image": "https://files.myglamm.com/site-images/400x400/1623081265647-opulent-ocean-6.jpeg",
+        "Image": "https://files.myglamm.com/site-images/400x400/1623136708385-Summer-Blue-Open.jpeg",
         "Description": "Hi-Shine Gel Finish Nail Enamel | Made in Italy"
     }
 ]`;

@@ -5,7 +5,6 @@ function EntryToMenu() {
     var istrue = false;
     for (var i = 0; i < arr2.length; i++) {
       if (arr2[i].email == mail && arr2[i].password == pass) {
-        window.location.href = "sprint4menu.html";
         istrue = true;
         document.getElementById("email").value = null;
         document.getElementById("pass").value = null;
