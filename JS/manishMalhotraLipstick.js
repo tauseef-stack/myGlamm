@@ -159,5 +159,5 @@ if (arr != null) {
 }
 
 function home() {
-window.location.href = "FinalMergeFile.html";
+window.location.href = "../index.html";
 }

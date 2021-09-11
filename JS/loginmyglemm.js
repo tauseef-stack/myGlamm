@@ -9,7 +9,7 @@ function EntryToMenu() {
         document.getElementById("email").value = null;
         document.getElementById("pass").value = null;
         alert("Signin Successfull");
-        window.location.href = "FinalMergeFile.html";
+        window.location.href = "../index.html";
         break;
       }
     }

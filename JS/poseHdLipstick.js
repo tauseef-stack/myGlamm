@@ -168,5 +168,5 @@ var count = 0;
 }
 
 function home(){
-window.location.href = "FinalMergeFile.html";
+window.location.href = "../index.html";
 }

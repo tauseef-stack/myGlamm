@@ -34,11 +34,11 @@ function datacollect(e) {
       form.email.value = null;
       form.password.value = null;
       alert("Registeration Successful");
-      window.location.href = "loginmyglemm.html";
+      window.location.href = "\loginmyglemm.html";
     }
   }
 
   function loginpage(e) {
     e.preventDefault();
-    window.location.href = "loginmyglemm.html";
+    window.location.href = "\loginmyglemm.html";
   }

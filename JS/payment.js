@@ -16,6 +16,6 @@
       ) {
         alert("enter valid details");
       } else {
-        window.location.href = "success.html";
+        window.location.href = "../HTML/success.html";
       }
     }

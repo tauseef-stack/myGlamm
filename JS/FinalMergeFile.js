@@ -260,10 +260,3 @@ var count = 1;
       }
     }
   }
-
-  function manishLacquer() {
-    window.location.href = "\manishNailLacquer.html";
-  }
-  function poseHd() {
-    window.location.href = "\poseHdLipstick.html";
-  }
