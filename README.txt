@@ -1,32 +1,53 @@
-                                                                     "myGlamm"
-      About:This is a beauty product website which we clone during our unit 2 construct week in masai. 
-It contains large amount of beauty product according to different body section.
-    
-     Description:It was fun task to clone a beauty product site.When we look at it's home page it is looks
-dynamic contains all the dynamic properties of HTML,CSS,JS.At novbar it has all the categories according 
-to offers,body parts,rewards,exports,skin tone etc and all the categories having sub categories apears
- when we hover over the main categories like drop down menu.Below Navbar it has carousel slider which
- is Automatically sliding in every 3 seconds using setInterval property of Java Script.
- It has also manual sliding option by checking into radio button adds attraction to home page.
+# Project:- Clone of hotels.com
+##### Hotels.com is a leading provider of hotel accommodation worldwide, offering booking services through its own network of localized websites.Hotels.com gives travelers one of the widest selections of accommodation on the net, including both independent and major chain hotels as well as self-catering in over hundreds of thousands of properties worldwide. The company offers a one-stop shopping source for hotel pricing, amenities, and availability.
+We were able to achieve axact UI of the website, with all these major functionalities within 5-6 days.
 
-    As we move down to the home page it has several automatic carousel slider containing different products
-and it's specification . we have also carousel slider containing product information and it's usage. 
-At the end of the home page we have autoplay background video and finally footer which also contains all main 
-and sub categories.
+### - [Visit Site](https://hotelsclone.netlify.app/)
 
-    By clicking any categories we redirect to all the related products page. Each product has it's price,
-description and add to bag button which adds product into bag with the help of local storage. 
-after adding all shopping product we can directly go to bag summary page by simply clicking on bag icon.
- At the top of the page it shows number of products added,Total amount needs to be paid. At right top of bag 
-we also added discount option if user type masai25 total amount automatically reduced by 25% only once and 
-below this we have proceed to payment option.
+### Screenshots
+#### Landing page-
+![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/landing%20page.png)
+#### SignUp page-
+![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/signup.png)
+#### SignIn page-
+![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/signin.png)
+#### Search Results page-
+![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/searchResults.png)
+#### Hotel page-
+![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/hotelDetailsPage.png)
+#### Payments page-
+![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/paymentsPage.png)
+#### Deals page-
+![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/dealsPage.png)
 
-    when we click on proceed to payment button it is diretly redirect to proceed payment page. it is having all 
-kinds of payment options UPI,Credit Card,Debit Card,Cash of delievery etc. use can select any option of his choice
- and after clicking payment button process of shopping gets completed. 
+### Team members:-
+#### Abhishek Mahato [View GitHub profile](https://github.com/abhishekmah)
+#### Debasish Ransingh [View GitHub profile](https://github.com/Ransingh88)
+#### Rohit Gupta  [View GitHub profile](https://github.com/rohitkumar0427)
+#### Nitish Verma [View GitHub profile](https://github.com/nitishVrma)
+
+### Pages Designed:
+Landing page, SignUp page, SignIn page, Hotel search page, Hotel details page, Map page, Payment page, Latest deals page.
+
+### Tech Stack : 
+React Js, JavaScript, HTML, CSS.
  
- 
-  
+ ### Libraries used : 
+ JSON-server, Material UI, React Icons, Axios, Styled-components, google-maps-react, react-router, react-router-dom, redux, UUID, react-responsive-carousel.
+## How to run this project
 
-      
+In the project directory, you can run:
 
+#1. install node modules `npm i`
+
+#2. install json-server `npm install -g json-server`
+
+#3. start json-server on port 3001
+
+#3(a). split the terminal `ctrl+shift+5`
+
+#3(b). start json-server `json-server --watch db.json --port 3001`
+
+#4. start react app `npm start`
+
+#5.Most importantly install all the dependencies.
