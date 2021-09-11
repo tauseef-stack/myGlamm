@@ -1,54 +1,34 @@
-# Project:- Clone of hotels.com
-##### Hotels.com is a leading provider of hotel accommodation worldwide, offering booking services through its own network of localized websites.Hotels.com gives travelers one of the widest selections of accommodation on the net, including both independent and major chain hotels as well as self-catering in over hundreds of thousands of properties worldwide. The company offers a one-stop shopping source for hotel pricing, amenities, and availability.
+# Project:- Clone of MyGlamm.com
+##### MyGlamm is a direct-to-consumer beauty brand that offers an online beauty products marketplace with international spa and salon products. The company uses a combination of technology, content, and social media to allow consumers to not only discover its products but also create rich, personalized, content and tutorial.
 We were able to achieve axact UI of the website, with all these major functionalities within 5-6 days.
 
-### - [Visit Site](https://hotelsclone.netlify.app/)
+### - [Visit Site](https://myglammclone.netlify.app)
 
 ### Screenshots
 #### Landing page-
 ![alt text](https://github.com/tauseef-stack/myGlamm/blob/master/Screenshots/landingPage.png)
 #### SignUp page-
-![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/signup.png)
+![alt text](https://github.com/tauseef-stack/myGlamm/blob/master/Screenshots/Signup.png)
 #### SignIn page-
-![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/signin.png)
-#### Search Results page-
-![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/searchResults.png)
-#### Hotel page-
-![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/hotelDetailsPage.png)
+![alt text](https://github.com/tauseef-stack/myGlamm/blob/master/Screenshots/login.png)
+#### Lipstick page-
+![alt text](https://github.com/tauseef-stack/myGlamm/blob/master/Screenshots/lipsPage.png)
+#### NailPolish page-
+![alt text](https://github.com/tauseef-stack/myGlamm/blob/master/Screenshots/nailPolish.png)
+#### Product Detail page-
+![alt text](https://github.com/tauseef-stack/myGlamm/blob/master/Screenshots/productDetails.png)
 #### Payments page-
-![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/paymentsPage.png)
-#### Deals page-
-![alt text](https://github.com/abhishekmah/Project-Hotels.com/blob/master/screenshots/dealsPage.png)
+![alt text](https://github.com/tauseef-stack/myGlamm/blob/master/Screenshots/payment.png)
 
 ### Team members:-
 #### Abhishek Mahato [View GitHub profile](https://github.com/abhishekmah)
-#### Debasish Ransingh [View GitHub profile](https://github.com/Ransingh88)
-#### Rohit Gupta  [View GitHub profile](https://github.com/rohitkumar0427)
+#### Tauseef Ansari [View GitHub profile](https://github.com/tauseef-stack)
 #### Nitish Verma [View GitHub profile](https://github.com/nitishVrma)
 
 ### Pages Designed:
-Landing page, SignUp page, SignIn page, Hotel search page, Hotel details page, Map page, Payment page, Latest deals page.
+Landing page, SignUp page, SignIn page, Lipstick Items page, NailPolish Items page, Product details page, Payment page.
 
 ### Tech Stack : 
-React Js, JavaScript, HTML, CSS.
+JavaScript, HTML, CSS.
  
- ### Libraries used : 
- JSON-server, Material UI, React Icons, Axios, Styled-components, google-maps-react, react-router, react-router-dom, redux, UUID, react-responsive-carousel.
-## How to run this project
-
-In the project directory, you can run:
-
-#1. install node modules `npm i`
-
-#2. install json-server `npm install -g json-server`
-
-#3. start json-server on port 3001
-
-#3(a). split the terminal `ctrl+shift+5`
-
-#3(b). start json-server `json-server --watch db.json --port 3001`
-
-#4. start react app `npm start`
-
-#5.Most importantly install all the dependencies.
 
